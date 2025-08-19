@@ -7,10 +7,10 @@ export function TeaCollection() {
       <div className="absolute bottom-8 right-16 text-amber-400 text-sm">✦</div>
 
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-2 font-sans">
+        <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
           BỘ SƯU TẬP MỚI: TRÀ TRÔNG TRĂNG
         </h2>
-        <div className="w-48 h-0.5 bg-gray-800 mx-auto mb-16"></div>
+        <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
 
         <div className="grid md:grid-cols-2 gap-16 max-w-4xl mx-auto">
           {/* Trăng Tròn */}

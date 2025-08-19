@@ -158,6 +158,11 @@ export default function CooperateWith() {
           </div> */}
         </div>
       </div>
+      <div className="w-[800px] max-w-full mx-auto text-xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15">
+        {currentKOL.bottomText.split("\n").map((line, index) => (
+          <p key={index}>{line}</p>
+        ))}
+      </div>
     </section>
   );
 }
