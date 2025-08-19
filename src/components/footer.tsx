@@ -73,7 +73,7 @@ export default function Footer() {
     //     </div>
     //   </div>
     // </footer>
-    <section className="relative min-h-screen flex items-center justify-center px-0 py-0 bg-transparent overflow-hidden">
+    <section className="relative flex items-center justify-center px-0 py-0 bg-transparent overflow-hidden mt-40 pb-10">
       <div className="relative w-[90vw] h-[40vh] md:h-[40vh] max-w-none">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"

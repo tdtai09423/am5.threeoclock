@@ -123,7 +123,7 @@ export default function CooperateWith() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
           <div className="relative aspect-square rounded-lg overflow-hidden">
             <Image
               src="/img/1.png"
@@ -158,7 +158,7 @@ export default function CooperateWith() {
           </div> */}
         </div>
       </div>
-      <div className="w-[800px] max-w-full mx-auto text-xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15">
+      <div className="w-[1000px] max-w-full mx-auto text-2xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15">
         {currentKOL.bottomText.split("\n").map((line, index) => (
           <p key={index}>{line}</p>
         ))}
