@@ -11,10 +11,10 @@ export function PartnershipSection() {
       <div className="max-w-7xl mx-auto">
         {/* Main heading */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
+          <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
             PHỐI HỢP THỰC HIỆN CÙNG
           </h2>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
+          <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
             BỆNH VIỆN NHI ĐỒNG 1 TP.HCM
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
