@@ -8,7 +8,7 @@ export function TeaCollection() {
 
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2 font-sans">
-          BỘ SƯU TẬP MỚI: TRÀ TRỐNG TRĂNG
+          BỘ SƯU TẬP MỚI: TRÀ TRÔNG TRĂNG
         </h2>
         <div className="w-48 h-0.5 bg-gray-800 mx-auto mb-16"></div>
 

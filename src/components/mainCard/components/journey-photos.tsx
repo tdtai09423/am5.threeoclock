@@ -15,13 +15,13 @@ export function JourneyPhotos() {
         >
           <div className="relative w-100 h-100 md:w-130 md:h-130 rounded-full overflow-hidden shadow-xl border-4 border-white">
             <Image
-              src="/vietnamese-children-gifts.png"
+              src="/img/2020.png"
               alt="Ấm 2020 - Trẻ em nhận quà Trung thu"
               fill
               className="object-cover"
             />
           </div>
-          <div className="font-serif text-lg md:text-xl text-amber-900 font-semibold">
+          <div className="font-serif text-2xl md:text-3xl text-amber-900 font-semibold">
             2020
           </div>
         </div>
@@ -38,13 +38,13 @@ export function JourneyPhotos() {
         >
           <div className="relative w-100 h-100 md:w-110 md:h-110 rounded-full overflow-hidden shadow-xl border-4 border-white">
             <Image
-              src="/vietnamese-volunteers-children-mid-autumn.png"
+              src="/img/2022.png"
               alt="Ấm 2022 - Tình nguyện viên và trẻ em"
               fill
               className="object-cover"
             />
           </div>
-          <div className="font-serif text-lg md:text-xl text-amber-900 font-semibold">
+          <div className="font-serif text-2xl md:text-3xl text-amber-900 font-semibold">
             2022
           </div>
         </div>
@@ -61,14 +61,14 @@ export function JourneyPhotos() {
         >
           <div className="relative w-100 h-100 md:w-120 md:h-120 rounded-full overflow-hidden shadow-xl border-4 border-white">
             <Image
-              src="/vietnamese-children-volunteers-2023.png"
+              src="/img/2024.png"
               alt="Ấm 2023 - Hoạt động từ thiện"
               fill
               className="object-cover"
             />
           </div>
-          <div className="font-serif text-lg text-amber-900 font-semibold">
-            2023
+          <div className="font-serif text-2xl md:text-3xl text-amber-900 font-semibold">
+            2024
           </div>
         </div>
 
@@ -84,14 +84,14 @@ export function JourneyPhotos() {
         >
           <div className="relative w-100 h-100 md:w-130 md:h-130 rounded-full overflow-hidden shadow-xl border-4 border-white">
             <Image
-              src="/vietnamese-charity-2024.png"
+              src="/img/2023.png"
               alt="Ấm 2024 - Hoạt động cộng đồng"
               fill
               className="object-cover"
             />
           </div>
-          <div className="font-serif text-lg text-amber-900 font-semibold">
-            2024
+          <div className="font-serif text-2xl md:text-3xl text-amber-900 font-semibold">
+            2023
           </div>
         </div>
 
