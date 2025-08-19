@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function CooperateWith() {
   return (
-    <section className="bg-white py-16 px-6">
+    <section className="py-16 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">

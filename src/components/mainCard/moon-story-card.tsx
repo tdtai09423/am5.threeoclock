@@ -3,7 +3,7 @@ import { JourneyPhotos } from "./components/journey-photos";
 
 export default function MoonStoryCard() {
   return (
-    <main className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-100 overflow-hidden relative">
+    <main className="min-h-screen overflow-hidden relative">
       {/* Decorative stars scattered throughout */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 text-amber-300 text-xs">✦</div>

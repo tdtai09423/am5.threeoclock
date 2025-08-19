@@ -1,7 +1,7 @@
 import Image from "next/image";
 export function PartnershipSection() {
   return (
-    <section className="relative py-16 px-8 bg-gradient-to-br from-amber-50 to-orange-100">
+    <section className="relative py-16 px-8">
       {/* Decorative stars */}
       <div className="absolute top-8 left-12 text-amber-300 text-sm">✦</div>
       <div className="absolute top-20 right-16 text-amber-400 text-xs">✦</div>

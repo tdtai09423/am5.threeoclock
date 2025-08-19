@@ -1,6 +1,6 @@
 export function KOLPartnership() {
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-100 relative">
+    <section className="py-16 px-4 relative">
       {/* Decorative stars */}
       <div className="absolute top-12 right-8 text-amber-300 text-sm">✦</div>
       <div className="absolute bottom-16 left-12 text-amber-400 text-xs">✦</div>

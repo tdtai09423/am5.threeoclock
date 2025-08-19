@@ -121,6 +121,12 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #eac4a2 30%,
+      #eac4a2 65%,
+      #ffffff 100%
+    );
   }
 }

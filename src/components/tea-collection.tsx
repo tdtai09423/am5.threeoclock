@@ -1,7 +1,7 @@
 import Image from "next/image";
 export function TeaCollection() {
   return (
-    <section className="py-16 px-4 bg-gradient-to-br from-amber-50 to-orange-100 relative">
+    <section className="py-16 px-4 relative">
       {/* Decorative stars */}
       <div className="absolute top-8 left-12 text-amber-300 text-lg">✦</div>
       <div className="absolute bottom-8 right-16 text-amber-400 text-sm">✦</div>
