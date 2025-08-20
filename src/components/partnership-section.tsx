@@ -12,10 +12,10 @@ export function PartnershipSection() {
       <div className="max-w-[90%] mx-auto">
         {/* Main heading */}
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-black font-sans tracking-wide mb-3">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
             PHỐI HỢP THỰC HIỆN CÙNG
           </h2>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-black font-sans tracking-wide mb-3">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
             BỆNH VIỆN NHI ĐỒNG 1 TP.HCM
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
@@ -35,7 +35,7 @@ export function PartnershipSection() {
 
           {/* Text content */}
           <div className="">
-            <p className="text-justify text-xl md:text-2xl leading-relaxed font-sans text-black max-w-[95%]">
+            <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black max-w-[95%]">
               <strong>Ấm 5</strong> do <strong>THREE O&apos;CLOCK</strong> đồng
               hành cùng Bệnh viện Nhi Đồng 1 TP.HCM gây quỹ quà tặng Trung thu
               2025 cho hơn 300 bệnh nhi đang từng ngày chiến đấu với bệnh tật.

@@ -68,14 +68,14 @@ export default function CooperateWith() {
 
   const currentKOL = kolData.find((kol) => kol.id === activeKOL) || kolData[0];
   return (
-    <section className="py-32 px-6">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-63 px-6">
+      <div className="max-w-[80%] mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
+          <h2 className="text-4xl md:text-4xl font-bold text-black mb-4 font-futura-bold tracking-wide">
             ẤM 5 & HÀNH TRÌNH LAN TỎA
           </h2>
-          <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
+          <h2 className="text-4xl md:text-4xl font-bold text-black mb-4 font-futura-bold tracking-wide">
             YÊU THƯƠNG CÙNG ĐẠI SỨ
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
@@ -85,20 +85,20 @@ export default function CooperateWith() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-12">
           {/* Left side - Circle */}
           <div className="flex justify-center">
-            <div className="w-100 h-100 bg-black rounded-full flex items-center justify-center">
-              <span className="text-white text-4xl font-bold">KOL 1</span>
+            <div className="w-150 h-150 bg-black rounded-full flex items-center justify-center">
+              <span className="text-white text-7xl font-bold">KOL 1</span>
             </div>
           </div>
 
           {/* Right side - Content */}
-          <div className="space-y-6">
-            <p className="text-gray-700 leading-relaxed">
+          <div className="space-y-8">
+            <p className="font-futura-regular text-justify text-xl text-black leading-relaxed">
               Sự hiện diện của Đại sứ không chỉ mang đến làn gió mới cho chiến
               dịch, mà còn là cầu nối giúp lan tỏa mạnh mẽ thông điệp: Một ly
               trà thơm, thêm mùa trăng Ấm.
             </p>
 
-            <p className="text-gray-700 leading-relaxed">
+            <p className="font-futura-regular text-justify text-xl text-black leading-relaxed">
               Cùng <strong>THREE O&apos;CLOCK</strong>, Đại sứ sẽ trực tiếp tham
               gia các hoạt động thiện nguyện, đồng hành trong hành trình trao
               gửi những phần quà Trung thu đến các em nhỏ và kể lại những câu
@@ -123,8 +123,8 @@ export default function CooperateWith() {
         </div>
 
         {/* Image Grid */}
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6">
-          <div className="relative aspect-square rounded-lg overflow-hidden">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
+          <div className="relative aspect-square rounded-[40px] overflow-hidden">
             <Image
               src="/img/1.png"
               alt="Team photo"
@@ -132,7 +132,7 @@ export default function CooperateWith() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-square rounded-lg overflow-hidden">
+          <div className="relative aspect-square rounded-[40px] overflow-hidden">
             <Image
               src="/img/2.png"
               alt="Art supplies"
@@ -140,7 +140,7 @@ export default function CooperateWith() {
               className="object-cover"
             />
           </div>
-          <div className="relative aspect-square rounded-lg overflow-hidden">
+          <div className="relative aspect-square rounded-[40px] overflow-hidden">
             <Image
               src="/img/3.png"
               alt="Handmade crafts"
@@ -158,7 +158,7 @@ export default function CooperateWith() {
           </div> */}
         </div>
       </div>
-      <div className="w-[1000px] max-w-full mx-auto text-2xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15">
+      <div className="w-[1300px] max-w-full mx-auto text-3xl text-gray-700 leading-8 p-6 text-justify font-futura-regular rounded-lg mt-15">
         {currentKOL.bottomText.split("\n").map((line, index) => (
           <p key={index}>{line}</p>
         ))}

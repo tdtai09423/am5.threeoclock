@@ -8,7 +8,7 @@ export function TeaCollection() {
 
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-sans tracking-wide">
+          <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-futura-bold tracking-wide">
             BỘ SƯU TẬP MỚI: TRÀ TRÔNG TRĂNG
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
@@ -26,10 +26,12 @@ export function TeaCollection() {
                 className="object-contain"
               />
             </div>
-            <h3 className="text-5xl font-bold text-gray-800 mb-2 font-sans">
+            <h3 className="text-5xl font-bold text-gray-800 mb-2 font-futura-bold">
               TRĂNG TRÒN
             </h3>
-            <p className="text-lg text-gray-600 font-sans">Trà sữa khoai môn</p>
+            <p className="text-lg text-gray-600 font-futura-regular">
+              Trà sữa khoai môn
+            </p>
           </div>
 
           {/* Trăng Ấm */}
@@ -43,13 +45,15 @@ export function TeaCollection() {
                 className="object-contain"
               />
             </div>
-            <h3 className="text-5xl font-bold text-gray-800 mb-2 font-sans">
+            <h3 className="text-5xl font-bold text-gray-800 mb-2 font-futura-bold">
               TRĂNG ẤM
             </h3>
-            <p className="text-lg text-gray-600 font-sans">Trà sữa cốm</p>
+            <p className="text-lg text-gray-600 font-futura-regular">
+              Trà sữa cốm
+            </p>
           </div>
         </div>
-        <div className="w-[1000px] max-w-full mx-auto text-2xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15">
+        <div className="w-[1000px] max-w-full mx-auto text-2xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15 font-futura-regular">
           {/* <p className="text-gray-700 leading-relaxed font-sans text-lg md:text-xl">
               Three O&apos;clock đồng hành cùng{" "}
               <strong>Bệnh viện Nhi Đồng 1 TP.HCM</strong> để mang đến mỗi đêm
