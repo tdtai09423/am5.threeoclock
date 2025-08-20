@@ -7,6 +7,8 @@ export default function InfoCard() {
           {/* Left side - Image */}
           <div className="flex-shrink-0 h-[100%] w-auto">
             <Image
+              width={400}
+              height={400}
               src="/img/ava.png"
               alt="THREE O'CLOCK Building"
               className="rounded-[70px] w-full md:w-100 h-[100%] object-cover shadow-lg pl-0"
