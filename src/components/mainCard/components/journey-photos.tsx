@@ -119,17 +119,6 @@ export function JourneyPhotos() {
             </p>
           </div>
         </div>
-
-        <div className="absolute top-32 left-1/4 text-amber-300 text-2xl">
-          ✦
-        </div>
-        <div className="absolute bottom-32 right-1/4 text-amber-300 text-xl">
-          ✦
-        </div>
-        <div className="absolute top-1/2 left-12 text-amber-200 text-lg">✦</div>
-        <div className="absolute top-1/3 right-12 text-amber-200 text-lg">
-          ✦
-        </div>
       </div>
     </section>
   );

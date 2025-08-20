@@ -17,16 +17,16 @@ export default function InfoCard() {
 
           {/* Right side - Text content */}
           <div className="flex-1 space-y-4 text-2xl p-10">
-            <p className="text-gray-800 leading-relaxed">
+            <p className="text-gray-800 leading-relaxed font-futura-regular">
               <span className="font-semibold">THREE O&apos;CLOCK</span> tin rằng
               chỉ với một luật chia sẻ thông điệp này, bạn đã góp công sức không
               nhỏ trong công cuộc truyền cảm hứng, lan tỏa hoạt động ý nghĩa này
               đến nhiều người hơn, để từ đó{" "}
-              <span className="font-semibold">QUY ÂM 5</span> sẽ có thêm sức
+              <span className="font-semibold">QUỸ ẤM 5</span> sẽ có thêm sức
               mạnh giúp đỡ cho nhiều em nhỏ hơn nữa.
             </p>
 
-            <p className="text-gray-800 leading-relaxed">
+            <p className="text-gray-800 leading-relaxed font-futura-regular">
               Hãy chung tay cùng{" "}
               <span className="font-semibold">THREE O&apos;CLOCK</span> mang đến
               một mùa Tết Đoan Viên đầy niềm vui và ấm áp cho các em thiếu nhi

@@ -9,20 +9,6 @@ export function CircularHeroSection() {
             backgroundSize: "100% 110%",
           }}
         >
-          {/* Decorative stars scattered around */}
-          <div className="absolute top-20 left-20 text-orange-400 text-xs">
-            ✦
-          </div>
-          <div className="absolute top-32 right-24 text-orange-400 text-xs">
-            ✦
-          </div>
-          <div className="absolute bottom-40 left-16 text-orange-400 text-xs">
-            ✦
-          </div>
-          <div className="absolute bottom-24 right-20 text-orange-400 text-xs">
-            ✦
-          </div>
-
           {/* <div className="absolute inset-16 flex flex-col items-center justify-center text-center space-y-6"> */}
           {/* <div className="mb-4">
               <h1

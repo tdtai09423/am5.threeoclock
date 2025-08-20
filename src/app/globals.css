@@ -141,13 +141,28 @@
   body {
     font-family: var(--font-futura);
     font-weight: 400;
-    background: linear-gradient(
+    /* background: linear-gradient(
       to bottom,
       #ffffff 0%,
       #eac4a2 30%,
       #ffffff 85%,
       #eac4a2 100%
+    ); */
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f7e9dc 10%,
+      #eac4a2 30%,
+      #edd0b1 40%,
+      #ffffff 50%,
+      #f7e9dc 88%,
+      #edd0b1 100%,
+      #eac4a2 50%
     );
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* filter: blur(7.2px); */
   }
 }
 
