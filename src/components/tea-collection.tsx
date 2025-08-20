@@ -17,12 +17,11 @@ export function TeaCollection() {
         <div className="grid md:grid-cols-2 gap-64 max-w-5xl mx-auto">
           {/* Trăng Tròn */}
           <div className="text-center">
-            <div className="mb-8 flex justify-center">
+            <div className="relative w-64 h-80 md:w-80 md:h-96 mx-auto">
               <Image
                 src="/img/Ly1.png"
                 alt="Ly trà Trăng Tròn"
-                width={512}
-                height={640}
+                fill
                 className="object-contain"
               />
             </div>
@@ -36,12 +35,11 @@ export function TeaCollection() {
 
           {/* Trăng Ấm */}
           <div className="text-center">
-            <div className="mb-8 flex justify-center">
+            <div className="relative w-64 h-80 md:w-80 md:h-96 mx-auto">
               <Image
                 src="/img/Ly2.png"
                 alt="Ly trà Trăng Ấm"
-                width={512}
-                height={640}
+                fill
                 className="object-contain"
               />
             </div>
@@ -53,7 +51,7 @@ export function TeaCollection() {
             </p>
           </div>
         </div>
-        <div className="w-[1000px] max-w-full mx-auto text-2xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15 font-futura-regular">
+        <div className="w-[100%] max-w-full mx-auto text-3xl text-gray-700 leading-8 p-6 text-justify rounded-lg mt-15 font-futura-regular">
           {/* <p className="text-gray-700 leading-relaxed font-sans text-lg md:text-xl">
               Three O&apos;clock đồng hành cùng{" "}
               <strong>Bệnh viện Nhi Đồng 1 TP.HCM</strong> để mang đến mỗi đêm
@@ -63,7 +61,7 @@ export function TeaCollection() {
               những ký ức tuổi thơ đẹp đẽ, dù nơi đây vẫn còn những ngày chưa
               bình thường.
             </p> */}
-          <p>
+          <p className="leading-normal">
             Ngoài ra, năm nay khách hàng có thể cùng{" "}
             <strong>THREE O&apos;CLOCK</strong> gửi tặng những phần quà ý nghĩa
             đến các em nhỏ có hoàn cảnh khó khăn thông qua hoạt động{" "}

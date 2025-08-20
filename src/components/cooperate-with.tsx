@@ -159,9 +159,16 @@ export default function CooperateWith() {
         </div>
       </div>
       <div className="w-[1210px] max-w-full mx-auto text-3xl text-gray-700 leading-8 p-6 text-justify font-futura-regular rounded-lg mt-15">
-        {currentKOL.bottomText.split("\n").map((line, index) => (
-          <p key={index}>{line}</p>
-        ))}
+        <p className="leading-tight">
+          Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều tốt
+          đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn đầy và
+          ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho
+          nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến
+          các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua.
+          Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm
+          lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa
+          trăng hy vọng.
+        </p>
       </div>
     </section>
   );
