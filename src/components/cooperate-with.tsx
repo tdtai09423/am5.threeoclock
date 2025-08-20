@@ -27,7 +27,7 @@ const kolData: KOLData[] = [
       "/colorful-art-supplies.png",
     ],
     bottomText:
-      "Trung thu không chỉ tròn vạn lời anh trang, mà còn bài những điều tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trang tròn đầy vẻ ý nghĩa, tại tất cả các cửa hàng, sẽ được kể trí một góc check-in nhỏ nhỏ, nơi khách hàng có thể đăng ký chụp hình cùng ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm đăng chân, đây còn là nơi kết nối những tâm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trang hy vọng.",
+      "Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.",
   },
   {
     id: 2,
@@ -43,7 +43,7 @@ const kolData: KOLData[] = [
       "/community-outreach.png",
     ],
     bottomText:
-      "Mỗi hoạt động thiện nguyện đều mang trong mình một ý nghĩa sâu sắc. Chúng tôi tin rằng, những việc làm nhỏ bé hôm nay sẽ tạo nên những thay đổi tích cực lớn lao trong tương lai. Hãy cùng chúng tôi lan tỏa yêu thương và tạo nên một mùa Trung thu ấm áp, đầy ý nghĩa cho tất cả mọi người.",
+      "Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.",
   },
   {
     id: 3,
@@ -59,7 +59,7 @@ const kolData: KOLData[] = [
       "/placeholder.svg?height=200&width=300",
     ],
     bottomText:
-      "Cộng đồng là nơi chúng ta cùng nhau chia sẻ, hỗ trợ và phát triển. Mỗi cá nhân đều có thể đóng góp những giá trị tích cực cho xã hội. Hãy cùng chúng tôi tiếp tục hành trình xây dựng một cộng đồng yêu thương, nơi mọi người đều được quan tâm và hỗ trợ.",
+      "Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.",
   },
 ];
 
@@ -158,7 +158,7 @@ export default function CooperateWith() {
           </div> */}
         </div>
       </div>
-      <div className="w-[1300px] max-w-full mx-auto text-3xl text-gray-700 leading-8 p-6 text-justify font-futura-regular rounded-lg mt-15">
+      <div className="w-[1210px] max-w-full mx-auto text-3xl text-gray-700 leading-8 p-6 text-justify font-futura-regular rounded-lg mt-15">
         {currentKOL.bottomText.split("\n").map((line, index) => (
           <p key={index}>{line}</p>
         ))}

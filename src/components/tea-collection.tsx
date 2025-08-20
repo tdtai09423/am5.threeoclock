@@ -19,7 +19,7 @@ export function TeaCollection() {
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <Image
-                src="/img/Ly1-v1.png"
+                src="/img/Ly1.png"
                 alt="Ly trà Trăng Tròn"
                 width={512}
                 height={640}
@@ -38,7 +38,7 @@ export function TeaCollection() {
           <div className="text-center">
             <div className="mb-8 flex justify-center">
               <Image
-                src="/img/Ly2-v2.png"
+                src="/img/Ly2.png"
                 alt="Ly trà Trăng Ấm"
                 width={512}
                 height={640}
