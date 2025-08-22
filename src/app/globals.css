@@ -153,10 +153,10 @@
       #eac4a2 50%
     ); */
     background-image: url("/img/background.svg");
-    background-size: cover; /* phủ đầy màn hình */
-    background-position: center 10rem; /* canh giữa */
-    background-repeat: no-repeat; /* không lặp */
     min-height: 100vh;
+    background-size: cover; /* phủ đầy màn hình */
+    background-position: bottom 200px; /* canh giữa */
+    background-repeat: no-repeat; /* không lặp */
     margin: 0;
     padding: 0;
   }
