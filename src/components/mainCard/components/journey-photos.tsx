@@ -26,7 +26,7 @@ export function JourneyPhotos() {
 
         {/* 2022 Photo - positioned on the right */}
         <div
-          className="absolute right-[-6%] top-[3rem] md:top-[-130px] md:right-[-35%] flex flex-col items-center space-y-2"
+          className="absolute right-[-9%] top-[3rem] md:top-[-130px] md:right-[-35%] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
