@@ -2,7 +2,7 @@ import Image from "next/image";
 export default function InfoCard() {
   return (
     <>
-      <div className="bg-[linear-gradient(to_bottom,#F5D9C1,#F4B47B)] md:bg-[linear-gradient(to_bottom,#EAD8CA,#EAC4A2)] p-0 rounded-[40px] md:rounded-[70px] max-w-7xl mx-7 md:mx-auto">
+      <div className="bg-[linear-gradient(to_bottom,#F5D9C1,#F4B47B)] md:bg-[linear-gradient(to_bottom,#EAD8CA,#EAC4A2)] p-0 rounded-t-[80px] rounded-b-[40px] md:rounded-t-[70px] md:rounded-b-[70px] max-w-7xl mx-7 md:mx-auto">
         <div className="flex flex-col md:flex-row gap-1 md:gap-6 items-center p-0">
           {/* Left side - Image */}
           <div className="flex-shrink-0 h-[100%] w-auto">
