@@ -1,11 +1,11 @@
 import Image from "next/image";
 export function JourneyPhotos() {
   return (
-    <section className="relative -mt-32 px-4 z-10 min-h-[300px] md:min-h-[1300px]">
+    <section className="relative -mt-32 px-4 z-10 min-h-[840px] md:min-h-[1300px]">
       <div className="max-w-6xl mx-auto relative">
         {/* 2020 Photo - overlapping with main circle on the left */}
         <div
-          className="absolute left-[2%] top-[-29rem] md:top-[-300px] md:left-[-23%] flex flex-col items-center space-y-2"
+          className="absolute left-[2%] top-[-5rem] md:top-[-300px] md:left-[-23%] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
@@ -26,7 +26,7 @@ export function JourneyPhotos() {
 
         {/* 2022 Photo - positioned on the right */}
         <div
-          className="absolute right-[-6%] top-[-25rem] md:top-[-130px] md:right-[-35%] flex flex-col items-center space-y-2"
+          className="absolute right-[-6%] top-[-2rem] md:top-[-130px] md:right-[-35%] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
@@ -47,7 +47,7 @@ export function JourneyPhotos() {
 
         {/* 2023 Photo - positioned bottom left */}
         <div
-          className="absolute left-[-8%] bottom-[3rem] md:left-[-37%] md:bottom-[-380px] flex flex-col items-center space-y-2"
+          className="absolute left-[-8%] bottom-[-20rem] md:left-[-37%] md:bottom-[-380px] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
@@ -68,7 +68,7 @@ export function JourneyPhotos() {
 
         {/* 2024 Photo - positioned bottom right */}
         <div
-          className="absolute right-[-10%] bottom-[6rem] md:right-[-38%] md:bottom-[-330px] flex flex-col items-center space-y-2"
+          className="absolute right-[-10%] bottom-[-16rem] md:right-[-38%] md:bottom-[-330px] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
@@ -87,7 +87,7 @@ export function JourneyPhotos() {
           </div>
         </div>
 
-        <div className="relative top-[-13rem] md:top-0 px-7 pt-0 md:pt-72 pb-28">
+        <div className="relative top-[10rem] md:top-0 px-7 pt-0 md:pt-72 pb-28">
           {/* Tiêu đề */}
           <h3 className="font-futura text-lg md:text-5xl text-black font-futura-bold tracking-wide mb-0 md:mb-8 text-center">
             HÀNH TRÌNH CỦA ẤM
