@@ -125,7 +125,7 @@ const Ingredient = () => {
   };
 
   return (
-    <div className="min-h-screen bg-none md:p-10 md:pb-15">
+    <div className="min-h-[400px] md:min-h-screen bg-none md:p-10 md:pb-15">
       <div className="max-w-[80%] mx-auto">
         {/* Header */}
         {/* <div className="text-center mb-8">
@@ -235,7 +235,7 @@ const Ingredient = () => {
                     className={clsx(
                       "back absolute inset-0 w-full h-full rounded-lg p-2 shadow-xl md:p-4 overflow-hidden",
                       isFlipped
-                        ? "top-[11rem] left-[-8rem] md:top-[10rem] md:left-[-12rem]"
+                        ? "top-[3rem] left-[-3rem] md:top-[10rem] md:left-[-12rem]"
                         : "top-0 left-0"
                     )}
                     style={{
