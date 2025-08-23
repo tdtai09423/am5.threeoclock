@@ -1,5 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import clsx from "clsx";
 
 // Định nghĩa kiểu dữ liệu
 interface IngredientType {
@@ -127,7 +128,7 @@ const Ingredient = () => {
     <div className="min-h-screen bg-none md:p-10 md:pb-15">
       <div className="max-w-[80%] mx-auto">
         {/* Header */}
-        <div className="text-center mb-8">
+        {/* <div className="text-center mb-8">
           <h1 className="text-md md:text-4xl text-black font-futura-bold mb-4">
             Lật thẻ để thu thập nguyên liệu
           </h1>
@@ -135,7 +136,7 @@ const Ingredient = () => {
             và làm bánh trung thu!
           </h1>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
-        </div>
+        </div> */}
 
         {/* Game Board */}
         <div className="flex items-center justify-center p-8">
@@ -231,11 +232,14 @@ const Ingredient = () => {
 
                   {/* Back face (card content) */}
                   <div
-                    className="back absolute inset-0 w-full h-full rounded-lg p-2 shadow-xl md:p-4 overflow-hidden"
+                    className={clsx(
+                      "back absolute inset-0 w-full h-full rounded-lg p-2 shadow-xl md:p-4 overflow-hidden",
+                      isFlipped
+                        ? "top-[10rem] left-[0rem] md:top-[10rem] md:left-[-12rem]"
+                        : "top-0 left-0"
+                    )}
                     style={{
                       backfaceVisibility: "hidden",
-                      top: isFlipped ? "10rem" : "0",
-                      left: isFlipped ? "-12rem" : "0",
                       transform: isFlipped
                         ? "rotateY(180deg) rotateZ(0deg) scale(1.5, 1.5)"
                         : "rotateY(180deg) rotateZ(0deg) scale(1, 1)",
