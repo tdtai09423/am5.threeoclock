@@ -235,7 +235,7 @@ const Ingredient = () => {
                     className={clsx(
                       "back absolute inset-0 w-full h-full rounded-lg p-2 shadow-xl md:p-4 overflow-hidden",
                       isFlipped
-                        ? "top-[10rem] left-[0rem] md:top-[10rem] md:left-[-12rem]"
+                        ? "top-[12rem] left-[-6rem] md:top-[10rem] md:left-[-12rem]"
                         : "top-0 left-0"
                     )}
                     style={{
