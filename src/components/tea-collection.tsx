@@ -53,12 +53,11 @@ export function TeaCollection() {
               Ngoài ra, năm nay khách hàng có thể cùng{" "}
               <strong>THREE O&apos;CLOCK</strong> gửi tặng những phần quà ý
               nghĩa đến các em nhỏ có hoàn cảnh khó khăn thông qua hoạt động{" "}
-              <strong>GOM TRĂNG.</strong>
-              Mỗi ly nước trong mùa Trung thu năm nay sẽ đi kèm{" "}
-              <strong>01 tem cào</strong> chứa nguyên liệu làm nên bánh trung
-              thu, bao gồm: bột, đường, trứng, đậu xanh, khoai môn/hạt sen. Khi
-              sưu tập đủ 5 tem, bạn có thể đổi một chiếc bánh Trung thu{" "}
-              <strong>THREE O&apos;CLOCK</strong>
+              <strong>GOM TRĂNG.</strong> Mỗi ly nước trong mùa Trung thu năm
+              nay sẽ đi kèm <strong>01 tem cào</strong> chứa nguyên liệu làm nên
+              bánh trung thu, bao gồm: bột, đường, trứng, đậu xanh, khoai
+              môn/hạt sen. Khi sưu tập đủ 5 tem, bạn có thể đổi một chiếc bánh
+              Trung thu <strong>THREE O&apos;CLOCK</strong>
               đậm vị sẻ chia hoặc có thể chọn trao tặng cho các em bệnh nhi Bệnh
               Viện Nhi Đồng 1 TP.HCM trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm
               nay.
