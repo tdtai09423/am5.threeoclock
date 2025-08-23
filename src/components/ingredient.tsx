@@ -299,8 +299,6 @@ const Ingredient = () => {
               -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
               position: absolute;
-              top: 0;
-              left: 0;
             }
 
             .front {
