@@ -26,7 +26,7 @@ export function TeaCollection() {
                 TRĂNG TRÒN
               </h3>
               <p className="text-lg text-gray-600 font-futura-regular">
-                Trà sữa khoai môn
+                Trà Sữa Khoai Môn
               </p>
             </div>
 
@@ -44,7 +44,7 @@ export function TeaCollection() {
                 TRĂNG ẤM
               </h3>
               <p className="text-lg text-gray-600 font-futura-regular">
-                Trà sữa cốm
+                Trà Sữa Cốm
               </p>
             </div>
           </div>
@@ -57,10 +57,9 @@ export function TeaCollection() {
               nay sẽ đi kèm <strong>01 tem cào</strong> chứa nguyên liệu làm nên
               bánh trung thu, bao gồm: bột, đường, trứng, đậu xanh, khoai
               môn/hạt sen. Khi sưu tập đủ 5 tem, bạn có thể đổi một chiếc bánh
-              Trung thu <strong>THREE O&apos;CLOCK</strong>
-              đậm vị sẻ chia hoặc có thể chọn trao tặng cho các em bệnh nhi Bệnh
-              Viện Nhi Đồng 1 TP.HCM trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm
-              nay.
+              Trung thu <strong>THREE O&apos;CLOCK</strong> đậm vị sẻ chia hoặc
+              có thể chọn trao tặng cho các em bệnh nhi Bệnh Viện Nhi Đồng 1
+              TP.HCM trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm nay.
             </p>
           </div>
         </div>
