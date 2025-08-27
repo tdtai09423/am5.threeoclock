@@ -15,10 +15,10 @@ export default function Header() {
   ];
 
   return (
-    <header className="w-full bg-white shadow-md">
-      <nav className="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+    <header className="w-full bg-white">
+      <nav className="max-w-[80%] mx-auto flex items-center justify-between px-0 py-4">
         {/* Menu bên trái */}
-        <ul className="flex gap-12 text-lg font-semibold">
+        <ul className="flex flex-1 justify-evenly text-xl font-futura-bold">
           {navItems.map((item) => {
             const isActive = pathname === item.href;
             return (
@@ -27,7 +27,7 @@ export default function Header() {
                   href={item.href}
                   className={`${
                     isActive
-                      ? "font-bold underline underline-offset-4"
+                      ? "font-futura-bold underline underline-offset-4"
                       : "hover:underline underline-offset-4"
                   }`}
                 >
@@ -43,8 +43,8 @@ export default function Header() {
           <Image
             src="/img/logo.png"
             alt="Logo"
-            width={100}
-            height={100}
+            width={110}
+            height={110}
             priority
           />
         </Link>
