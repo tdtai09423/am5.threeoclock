@@ -69,15 +69,18 @@ export default function CooperateWith() {
   const currentKOL = kolData.find((kol) => kol.id === activeKOL) || kolData[0];
   return (
     <>
-      <section className="hidden md:block py-63 px-6">
+      <section className="hidden md:block py-30 px-6">
         <div className="max-w-[80%] mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-4xl font-bold text-black mb-4 font-futura-bold tracking-wide">
-              ẤM 5 & HÀNH TRÌNH LAN TỎA
+            <h2 className="text-4xl md:text-7xl font-bold text-black mb-4 font-futura-bold tracking-wide mb-[13rem]">
+              Chặng 2: Treo Trăng
             </h2>
             <h2 className="text-4xl md:text-4xl font-bold text-black mb-4 font-futura-bold tracking-wide">
-              YÊU THƯƠNG CÙNG ĐẠI SỨ
+              HÀNH TRÌNH LAN TỎA YÊU
+            </h2>
+            <h2 className="text-4xl md:text-4xl font-bold text-black mb-4 font-futura-bold tracking-wide">
+              THƯƠNG CÙNG ĐẠI SỨ
             </h2>
             <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
           </div>
@@ -105,71 +108,8 @@ export default function CooperateWith() {
                 trao gửi những phần quà Trung thu đến các em nhỏ và kể lại những
                 câu chuyện phía sau mỗi chiếc bánh được trao đi.
               </p>
-              <div className="flex gap-4 pt-4">
-                {kolData.map((kol) => (
-                  <button
-                    key={kol.id}
-                    onClick={() => setActiveKOL(kol.id)}
-                    className={`w-60 h-10 px-6 py-2 rounded-full font-bold text-lg transition-all ${
-                      activeKOL === kol.id
-                        ? "bg-[#eac4a2] text-black hover:bg-[#eac4a2]/80 border border-[#eac4a2]"
-                        : "bg-black text-white hover:bg-gray-800"
-                    }`}
-                  >
-                    {kol.name}
-                  </button>
-                ))}
-              </div>
             </div>
           </div>
-
-          {/* Image Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
-            <div className="relative aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/1.png"
-                alt="Team photo"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/2.png"
-                alt="Art supplies"
-                fill
-                className="object-cover"
-              />
-            </div>
-            <div className="relative aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/3.png"
-                alt="Handmade crafts"
-                fill
-                className="object-cover"
-              />
-            </div>
-            {/* <div className="relative aspect-square rounded-lg overflow-hidden">
-            <Image
-              src="/colorful-paper-crafts-origami.png"
-              alt="Paper crafts"
-              fill
-              className="object-cover"
-            />
-          </div> */}
-          </div>
-        </div>
-        <div className="w-[1210px] max-w-full mx-auto text-3xl text-gray-700 leading-8 p-6 text-justify font-futura-regular rounded-lg mt-15">
-          <p className="leading-tight">
-            Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều
-            tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn
-            đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc
-            check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều
-            ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những
-            mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết
-            nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng
-            thêm một mùa trăng hy vọng.
-          </p>
         </div>
       </section>
       {/* ---------------------------------------------------------------------------------------------------------- */}

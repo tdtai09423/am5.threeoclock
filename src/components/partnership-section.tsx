@@ -12,36 +12,41 @@ export function PartnershipSection() {
       <div className="hidden md:block max-w-[90%] mx-auto">
         {/* Desktop version */}
         <div className="text-center mb-14">
+          <h2 className="text-lg md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-6">
+            Chặng 1: Gom Trăng
+          </h2>
           <h2 className="text-lg md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
-            PHỐI HỢP THỰC HIỆN CÙNG
+            SỰ KIỆN THU THẬP TEM NGUYÊN
           </h2>
           <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
-            BỆNH VIỆN NHI ĐỒNG 1 TP.HCM
+            LIỆU NHẬN BÁNH TRUNG THU
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
         </div>
 
         {/* Partnership content */}
-        <div className="grid grid-cols-2 md:grid-cols-2 gap-20 items-center">
+        <div className="flex flex-col items-center justify-center gap-6">
           {/* Hospital image */}
-          <div className="relative w-full h-[380px] md:h-[500px]">
+          <div className="relative w-[70%] h-[380px] md:h-[600px] mb-10">
             <Image
               src="/img/BenhVienNhiDong1.png"
               alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
               fill
-              className="object-cover rounded-[80px] shadow-lg"
+              className="object-cover object-center rounded-[80px] shadow-lg"
             />
           </div>
 
           {/* Text content */}
-          <div className="">
-            <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black max-w-[95%]">
-              <strong>Ấm 5</strong> do <strong>THREE O&apos;CLOCK</strong> đồng
-              hành cùng Bệnh viện Nhi Đồng 1 TP.HCM gây quỹ quà tặng Trung thu
-              2025 cho hơn 300 bệnh nhi đang từng ngày chiến đấu với bệnh tật.
-              Dưới ánh trăng Ấm 5, từng phần quà Trung thu sẽ được trao tận tay
-              các em nhỏ, gửi gắm những lời chúc của khách hàng về một mùa trăng
-              trọn vẹn đến với các em.
+          <div className="max-w-[65%]">
+            <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
+              Từ ngày 05/09 - 30/09/2025, mỗi ly nước trong mùa Trung thu năm
+              nay sẽ đi kèm 01 tem cào chứa nguyên liệu làm nên bánh trung thu,
+              bao gồm: bột, đường, trứng, đậu xanh, khoai môn/hạt sen. Khi sưu
+              tập đủ 5 tem, bạn có thể đổi một chiếc bánh Trung thu
+              <strong> THREE O&apos;CLOCK </strong>
+              đậm vị sẻ chia hoặc có thể chọn trao tặng cho các em bệnh nhi Bệnh
+              Viện Nhi Đồng 1 TP.HCM trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm
+              nay.
             </p>
           </div>
         </div>
@@ -74,13 +79,13 @@ export function PartnershipSection() {
           {/* Text content */}
           <div className="">
             <p className="text-justify text-md md:text-2xl leading-relaxed font-futura-regular text-black max-w-[95%]">
-              Three O&apos;clock đồng hành cùng{" "}
-              <strong>Bệnh viện Nhi Đồng 1 TP.HCM</strong> để mang đến một đêm
-              hội trăng rằm ấm áp cho các em nhỏ đang điều trị. Trong không gian
-              chan hòa ánh trăng và tiếng cười, từng phần quà Trung thu được
-              trao tận tay, gửi gắm lời chúc về một mùa trăng trọn vẹn cùng
-              những ký ức tuổi thơ đẹp đẽ, dù nơi đây vẫn còn những ngày chữa
-              bệnh dài.
+              Từ ngày 05/09 - 30/09/2025, mỗi ly nước trong mùa Trung thu năm
+              nay sẽ đi kèm 01 tem cào chứa nguyên liệu làm nên bánh trung thu,
+              bao gồm: bột, đường, trứng, đậu xanh, khoai môn/hạt sen. Khi sưu
+              tập đủ 5 tem, bạn có thể đổi một chiếc bánh Trung thu
+              <strong>THREE O&apos;CLOCK</strong> đậm vị sẻ chia hoặc có thể
+              chọn trao tặng cho các em bệnh nhi Bệnh Viện Nhi Đồng 1 TP.HCM
+              trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm nay.
             </p>
           </div>
         </div>

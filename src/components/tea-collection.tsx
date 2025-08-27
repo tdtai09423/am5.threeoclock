@@ -48,7 +48,7 @@ export function TeaCollection() {
               </p>
             </div>
           </div>
-          <div className="w-[100%] max-w-full mx-auto text-3xl text-black leading-8 p-6 text-justify rounded-lg mt-15 font-futura-regular">
+          {/* <div className="w-[100%] max-w-full mx-auto text-3xl text-black leading-8 p-6 text-justify rounded-lg mt-15 font-futura-regular">
             <p className="leading-normal">
               Ngoài ra, năm nay khách hàng có thể cùng{" "}
               <strong>THREE O&apos;CLOCK</strong> gửi tặng những phần quà ý
@@ -61,7 +61,7 @@ export function TeaCollection() {
               có thể chọn trao tặng cho các em bệnh nhi Bệnh Viện Nhi Đồng 1
               TP.HCM trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm nay.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* --------------------------------------------------------------------------------------------- */}
@@ -111,7 +111,7 @@ export function TeaCollection() {
               </p>
             </div>
           </div>
-          <div className="w-[100%] max-w-full mx-auto text-md text-black leading-8 p-6 text-justify rounded-lg mt-1 font-futura-regular">
+          {/* <div className="w-[100%] max-w-full mx-auto text-md text-black leading-8 p-6 text-justify rounded-lg mt-1 font-futura-regular">
             <p className="leading-normal">
               Ngoài ra, năm nay khách hàng có thể cùng{" "}
               <strong>THREE O&apos;CLOCK</strong> gửi tặng những phần quà ý
@@ -125,7 +125,7 @@ export function TeaCollection() {
               chọn trao tặng cho các em bệnh nhi Bệnh Viện Nhi Đồng 1 TP.HCM
               trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm nay.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
