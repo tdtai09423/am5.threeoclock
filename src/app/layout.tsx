@@ -1,7 +1,9 @@
 import type React from "react";
 import type { Metadata } from "next";
+import Link from "next/link";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/header";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +30,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={`${inter.variable} ${playfair.variable}`}>
-      <body className="antialiased font-sans">{children}</body>
+      <body>
+        <Header />
+        <main className="min-h-screen">{children}</main>
+      </body>
     </html>
   );
 }
