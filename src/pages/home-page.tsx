@@ -4,7 +4,7 @@ import { PartnershipSection } from "@/components/partnership-section";
 import Ingredient from "@/components/ingredient";
 import { TeaCollection } from "@/components/tea-collection";
 import InfoCard from "@/components/info-card";
-import Footer from "@/components/footer";
+import Footer from "@/components/layout/footer";
 import { SetCake } from "@/components/set-cake";
 import { Workshop } from "@/components/workshop";
 
@@ -19,7 +19,6 @@ export default function HomePage() {
       <CooperateWith />
       <Workshop />
       <InfoCard />
-      <Footer />
     </main>
   );
 }
