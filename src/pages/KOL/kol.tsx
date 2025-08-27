@@ -13,7 +13,7 @@ export default function KolPage() {
         <div className="relative mt-6">
           <div className="absolute inset-0 rounded-full bg-gradient-to-b from-orange-200 to-orange-50 scale-125 blur-xl"></div>
           <img
-            src="/avatar.png"
+            src="/img/dien-vien-chi-tam.png"
             alt="Profile"
             className="relative z-10 w-60 h-60 object-cover rounded-full"
           />

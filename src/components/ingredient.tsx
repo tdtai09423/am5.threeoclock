@@ -35,44 +35,44 @@ const Ingredient = () => {
   };
 
   // State của game
-  const [cards, setCards] = useState<Card[]>([]);
+  // const [cards, setCards] = useState<Card[]>([]);
   const [collectedIngredients, setCollectedIngredients] = useState<string[]>(
     []
   );
   const [completedCakes, setCompletedCakes] = useState<string[]>([]);
-  const [gameState, setGameState] = useState("playing"); // 'playing', 'won'
+  // const [gameState, setGameState] = useState("playing"); // 'playing', 'won'
   const [isFlipped, setIsFlipped] = useState(false);
   const [isHiding, setIsHiding] = useState(false);
 
   // Khởi tạo game
-  useEffect(() => {
-    initializeGame();
-  }, []);
+  // useEffect(() => {
+  //   initializeGame();
+  // }, []);
 
   // Kiểm tra công thức hoàn thành
   useEffect(() => {
     checkRecipes();
   }, [collectedIngredients]);
 
-  const initializeGame = () => {
-    // Tạo 12 thẻ (2 bộ) để có cặp để lật
-    const duplicatedIngredients = [...ingredients, ...ingredients];
-    const shuffledIngredients = duplicatedIngredients.sort(
-      () => Math.random() - 0.5
-    );
+  // const initializeGame = () => {
+  //   // Tạo 12 thẻ (2 bộ) để có cặp để lật
+  //   const duplicatedIngredients = [...ingredients, ...ingredients];
+  //   const shuffledIngredients = duplicatedIngredients.sort(
+  //     () => Math.random() - 0.5
+  //   );
 
-    const gameCards = shuffledIngredients.map((ingredient, index) => ({
-      id: index,
-      ingredient,
-      isFlipped: false,
-      isMatched: false,
-    }));
+  //   const gameCards = shuffledIngredients.map((ingredient, index) => ({
+  //     id: index,
+  //     ingredient,
+  //     isFlipped: false,
+  //     isMatched: false,
+  //   }));
 
-    setCards(gameCards);
-    setCollectedIngredients([]);
-    setCompletedCakes([]);
-    setGameState("playing");
-  };
+  //   setCards(gameCards);
+  //   setCollectedIngredients([]);
+  //   setCompletedCakes([]);
+  //   setGameState("playing");
+  // };
 
   const checkRecipes = () => {
     const ingredientCounts = collectedIngredients.reduce((acc, ing) => {
@@ -103,26 +103,26 @@ const Ingredient = () => {
     }
 
     // Kiểm tra thắng game (hoàn thành cả 2 loại bánh)
-    if (completedCakes.length + newCompletedCakes.length === 2) {
-      setTimeout(() => {
-        setGameState("won");
-      }, 1000);
-    }
+    // if (completedCakes.length + newCompletedCakes.length === 2) {
+    //   setTimeout(() => {
+    //     setGameState("won");
+    //   }, 1000);
+    // }
   };
 
-  const handleCardClick = () => {
-    if (isFlipped) {
-      // Nếu thẻ đang lật, thực hiện animation ẩn
-      setIsHiding(false);
-      setTimeout(() => {
-        setIsFlipped(false);
-        setIsHiding(false);
-      }, 550); // Thời gian khớp với animation
-    } else {
-      // Nếu thẻ chưa lật, thực hiện lật thẻ
-      setIsFlipped(true);
-    }
-  };
+  // const handleCardClick = () => {
+  //   if (isFlipped) {
+  //     // Nếu thẻ đang lật, thực hiện animation ẩn
+  //     setIsHiding(false);
+  //     setTimeout(() => {
+  //       setIsFlipped(false);
+  //       setIsHiding(false);
+  //     }, 550); // Thời gian khớp với animation
+  //   } else {
+  //     // Nếu thẻ chưa lật, thực hiện lật thẻ
+  //     setIsFlipped(true);
+  //   }
+  // };
 
   return (
     <div className="min-h-[400px] md:min-h-screen bg-none md:p-10 md:pb-15">

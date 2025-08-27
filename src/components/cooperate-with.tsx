@@ -2,71 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 
-interface KOLData {
-  id: number;
-  name: string;
-  title: string;
-  description: string;
-  avatar: string;
-  images: string[];
-  bottomText: string;
-}
-
-const kolData: KOLData[] = [
-  {
-    id: 1,
-    name: "Tên KOL",
-    title: "ẨM 5 & HÀNH TRÌNH LAN TỎA YÊU THƯƠNG CÙNG ĐẠI SỨ",
-    description:
-      "Sự kiện diễn ra Đại sứ và không chỉ mang đến lan tỏa một nào chiến dịch, mà còn là dịp để giúp tôi tìm mạnh mẽ những điệp. KOL ký tại thôm, thêm mạo trong Ấm.\n\nCông THIẾC O'CLOCK. Đại sứ sẽ học tập thêm giá các hoạt động thiện nguyện, đồng hành trong hành trình trở giá những phần quà Trang thư đến các em nhỏ và kế tại những của chuyện phải sau nói chiếc bệnh được trao đi.",
-    avatar: "/young-influencer-avatar.png",
-    images: [
-      "/colorful-young-group.png",
-      "/art-stickers-materials.png",
-      "/placeholder-qg1hs.png",
-      "/colorful-art-supplies.png",
-    ],
-    bottomText:
-      "Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.",
-  },
-  {
-    id: 2,
-    name: "Tên KOL",
-    title: "HÀNH TRÌNH CHIA SẺ YÊU THƯƠNG VỚI ĐẠI SỨ THƯƠNG HIỆU",
-    description:
-      "Đại sứ thương hiệu mang đến những câu chuyện cảm động về hành trình lan tỏa yêu thương. Với sự nhiệt huyết và tâm huyết, KOL 2 đã góp phần tạo nên những khoảnh khắc ý nghĩa.\n\nThông qua các hoạt động thiện nguyện, chúng tôi mong muốn kết nối cộng đồng và mang lại niềm vui cho các em nhỏ trong dịp Trung thu này.",
-    avatar: "/kol-influencer-avatars.png",
-    images: [
-      "/children-charity-event.png",
-      "/mooncake-sharing.png",
-      "/volunteer-activities.png",
-      "/community-outreach.png",
-    ],
-    bottomText:
-      "Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.",
-  },
-  {
-    id: 3,
-    name: "Tên KOL",
-    title: "CÙNG NHAU XÂY DỰNG CỘNG ĐỒNG YÊU THƯƠNG",
-    description:
-      "KOL 3 với vai trò đại sứ đã tích cực tham gia các hoạt động cộng đồng, mang đến những giá trị tích cực cho xã hội. Sự nhiệt tình và tinh thần trách nhiệm của KOL đã truyền cảm hứng cho nhiều người.\n\nVới mong muốn xây dựng một cộng đồng yêu thương, chúng tôi cam kết sẽ tiếp tục đồng hành cùng các hoạt động ý nghĩa.",
-    avatar: "/kol-community-leader.png",
-    images: [
-      "/placeholder.svg?height=300&width=400",
-      "/placeholder.svg?height=300&width=300",
-      "/placeholder.svg?height=200&width=200",
-      "/placeholder.svg?height=200&width=300",
-    ],
-    bottomText:
-      "Trung thu không chỉ trọn vẹn bởi ánh trăng, mà còn bởi những điều tốt đẹp được sẻ chia. Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.",
-  },
-];
-
 export default function CooperateWith() {
-  const [activeKOL, setActiveKOL] = useState<number>(1);
-
-  const currentKOL = kolData.find((kol) => kol.id === activeKOL) || kolData[0];
   return (
     <>
       <section className="hidden md:block py-30 px-6">
@@ -134,7 +70,7 @@ export default function CooperateWith() {
                 <span className="text-white text-5xl font-bold">KOL 1</span>
               </div>
             </div>
-            <div className="flex gap-4 pt-6">
+            {/* <div className="flex gap-4 pt-6">
               {kolData.map((kol) => (
                 <button
                   key={kol.id}
@@ -148,7 +84,7 @@ export default function CooperateWith() {
                   {kol.name}
                 </button>
               ))}
-            </div>
+            </div> */}
 
             {/* Right side - Content */}
             <div className="space-y-5 pt-6">

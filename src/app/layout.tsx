@@ -1,6 +1,5 @@
 import type React from "react";
 import type { Metadata } from "next";
-import Link from "next/link";
 import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/header";

@@ -18,7 +18,7 @@ export function Workshop() {
             <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
               Team 3H sẽ tổ chức Workshop “Thắp Sáng Trăng Rằm” làm 300 chiếc
               lồng đèn để tặng cho trẻ nhỏ tại Bệnh viện Nhi Đồng 1 TP.HCM vào
-              "Đêm Hội Trăng Rằm" ngày 2/10/2025
+              “Đêm Hội Trăng Rằm” ngày 2/10/2025
             </p>
           </div>
 
@@ -79,13 +79,7 @@ export function Workshop() {
           {/* Text content */}
           <div className="">
             <p className="text-justify text-md md:text-2xl leading-relaxed font-futura-regular text-black max-w-[95%]">
-              Từ ngày 05/09 - 30/09/2025, mỗi ly nước trong mùa Trung thu năm
-              nay sẽ đi kèm 01 tem cào chứa nguyên liệu làm nên bánh trung thu,
-              bao gồm: bột, đường, trứng, đậu xanh, khoai môn/hạt sen. Khi sưu
-              tập đủ 5 tem, bạn có thể đổi một chiếc bánh Trung thu
-              <strong>THREE O&apos;CLOCK</strong> đậm vị sẻ chia hoặc có thể
-              chọn trao tặng cho các em bệnh nhi Bệnh Viện Nhi Đồng 1 TP.HCM
-              trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm nay.
+              Từ ngày 05/09 - 30/09/2025
             </p>
           </div>
         </div>
