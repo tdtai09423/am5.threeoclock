@@ -7,6 +7,7 @@ import InfoCard from "@/components/info-card";
 import Footer from "@/components/layout/footer";
 import { SetCake } from "@/components/set-cake";
 import { Workshop } from "@/components/workshop";
+import { Stage3 } from "@/components/stage-3";
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <SetCake />
       <CooperateWith />
       <Workshop />
+      <Stage3 />
       <InfoCard />
     </main>
   );

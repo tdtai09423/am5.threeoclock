@@ -55,12 +55,12 @@ export function SetCake() {
               yêu thương cho các em.
             </p>
           </div>
-          <div className="relative w-[90%] h-[380px] md:h-[47rem] my-15">
+          <div className="relative w-[50%] h-[380px] md:h-[47rem] my-15">
             <Image
-              src="/img/BenhVienNhiDong1.png"
+              src="/img/look-like-moon.png"
               alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
               fill
-              className="object-cover object-center rounded-[80px] shadow-lg"
+              className="object-cover object-center rounded-full"
             />
           </div>
           <div className="max-w-[65%]">

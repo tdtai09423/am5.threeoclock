@@ -1,51 +1,40 @@
+import Image from "next/image";
+
 export default function KolPage() {
   return (
-    <div className="w-full p-6 flex flex-col items-center">
+    <div className="w-full p-0 flex flex-col items-center bg-[url('/img/bg-kol.svg')]">
       {/* Top Section */}
       <div className="w-full max-w-4xl flex flex-col items-center text-center">
-        <h3 className="text-sm font-bold uppercase">Sub-Title</h3>
-        <p className="text-gray-600 max-w-lg mt-1 text-sm">
-          Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-          faucibus ex sapien vitae pellentesque sem placerat.
-        </p>
-
         {/* Main Avatar */}
         <div className="relative mt-6">
-          <div className="absolute inset-0 rounded-full bg-gradient-to-b from-orange-200 to-orange-50 scale-125 blur-xl"></div>
-          <img
-            src="/img/dien-vien-chi-tam.png"
-            alt="Profile"
-            className="relative z-10 w-60 h-60 object-cover rounded-full"
-          />
+          <div className="relative w-[100vw] h-[150vh] md:h-[148vh] max-w-none">
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/img/dien-vien-tri-tam-large-pic.svg')]"
+              style={{
+                backgroundSize: "100% 110%",
+              }}
+            ></div>
+          </div>
         </div>
-
-        {/* Name */}
-        <h2 className="mt-6 text-2xl md:text-3xl font-bold text-black">
-          DIỄN VIÊN CHÍ TÂM
-        </h2>
       </div>
 
       {/* Bottom Section */}
-      <div className="w-full max-w-4xl mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        {/* Small avatar */}
-        <div className="flex justify-center">
-          <div className="rounded-full overflow-hidden w-40 h-40 shadow-md">
-            <img
-              src="/avatar.png"
-              alt="Small profile"
-              className="w-full h-full object-cover"
-            />
-          </div>
+      <div className="grid grid-cols-1 grid-cols-[2fr_5fr] gap-30 w-[80%] h-[390px] md:h-[690px] mb-10">
+        <div className="relative w-full h-[380px] md:h-[570px] mb-0">
+          <Image
+            src="/img/dien-vien-tri-tam-small-pic.svg"
+            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
+            fill
+            className="object-cover object-center"
+          />
         </div>
-
-        {/* Text bubble */}
-        <div className="bg-orange-100 rounded-2xl p-6 relative shadow-sm">
-          <p className="text-gray-700 text-sm">
-            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-            faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi
-            pretium tellus duis convallis.
-          </p>
-          <div className="absolute -left-4 top-8 w-0 h-0 border-y-8 border-y-transparent border-r-8 border-r-orange-100"></div>
+        <div className="relative w-full h-[380px] md:h-[500px] mb-0">
+          <Image
+            src="/img/bubble.svg"
+            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
+            fill
+            className="object-cover object-center"
+          />
         </div>
       </div>
     </div>
