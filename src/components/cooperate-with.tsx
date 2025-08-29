@@ -25,8 +25,13 @@ export default function CooperateWith() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-12">
             {/* Left side - Circle */}
             <div className="flex justify-center">
-              <div className="w-150 h-150 bg-black rounded-full flex items-center justify-center">
-                <span className="text-white text-7xl font-bold">KOL 1</span>
+              <div className="relative w-[85%] h-[380px] md:h-[600px] mb-10">
+                <Image
+                  src="/img/dien-vien-tri-tam-small-pic.svg"
+                  alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
+                  fill
+                  className="object-cover object-center rounded-full shadow-lg"
+                />
               </div>
             </div>
 
