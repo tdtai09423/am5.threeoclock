@@ -13,7 +13,7 @@ export function SetCake() {
         {/* Desktop version */}
         <div className="text-center mb-14">
           <h2 className="text-lg md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
-            SET BÁNH TRUNG THU “VỊ TRĂNG”
+            BÁNH TRUNG THU “VỊ TRĂNG”
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
         </div>

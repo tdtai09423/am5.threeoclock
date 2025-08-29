@@ -16,8 +16,17 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Snell";
+  src: url("/font/SVN-Snell-Roundhand-Script.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-futura: "SFU Futura", sans-serif;
+  --font-snell: "Snell", sans-serif;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -165,6 +174,11 @@
 .font-futura-regular {
   font-family: var(--font-futura);
   font-weight: 400;
+}
+
+.font-snell {
+  font-family: var(--font-snell);
+  font-weight: 500;
 }
 
 .font-futura-bold {

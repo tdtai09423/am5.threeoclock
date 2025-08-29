@@ -12,7 +12,7 @@ export function PartnershipSection() {
       <div className="hidden md:block max-w-[90%] mx-auto">
         {/* Desktop version */}
         <div className="text-center mb-14">
-          <h2 className="text-lg md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-6">
+          <h2 className="text-lg md:text-8xl font-extrabold text-black font-snell tracking-wide mb-20">
             Chặng 1: Gom Trăng
           </h2>
           <h2 className="text-lg md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
@@ -29,7 +29,7 @@ export function PartnershipSection() {
           {/* Hospital image */}
           <div className="relative w-[70%] h-[380px] md:h-[600px] mb-10">
             <Image
-              src="/img/BenhVienNhiDong1.png"
+              src="/img/su-kien-nhan-tem.png"
               alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
               fill
               className="object-cover object-center rounded-[80px] shadow-lg"

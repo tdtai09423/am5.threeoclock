@@ -12,7 +12,7 @@ export function Stage3() {
       <div className="hidden md:block max-w-[90%] mx-auto">
         {/* Desktop version */}
         <div className="text-center mb-14">
-          <h2 className="text-lg md:text-6xl font-extrabold text-black font-futura-bold tracking-wide mb-6">
+          <h2 className="text-lg md:text-8xl font-extrabold text-black font-snell tracking-wide mb-6">
             Chặng 3: Trông Trăng
           </h2>
         </div>

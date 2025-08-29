@@ -9,7 +9,7 @@ export default function CooperateWith() {
         <div className="max-w-[80%] mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-7xl font-bold text-black mb-4 font-futura-bold tracking-wide mb-[13rem]">
+            <h2 className="text-4xl md:text-8xl font-bold text-black mb-4 font-snell tracking-wide mb-[13rem]">
               Chặng 2: Treo Trăng
             </h2>
             <h2 className="text-4xl md:text-4xl font-bold text-black mb-4 font-futura-bold tracking-wide">
