@@ -20,35 +20,25 @@ export function SetCake() {
 
         {/* Partnership content */}
         <div className="flex flex-col items-center justify-center gap-6">
-          {/* Hospital image */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-30 w-[70%] h-[380px] md:h-[600px] mb-10">
-            <div className="relative w-full h-[380px] md:h-[600px] mb-0">
-              <Image
-                src="/img/set-cake-left.png"
-                alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-                fill
-                className="object-cover object-center rounded-[60px] shadow-lg"
-              />
-            </div>
-            <div className="relative w-full h-[380px] md:h-[600px] mb-0">
-              <Image
-                src="/img/set-cake-right.png"
-                alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-                fill
-                className="object-cover object-center rounded-[60px] shadow-lg"
-              />
-            </div>
+          {/* Focus image */}
+          <div className="relative w-[60%] h-[380px] md:h-[600px] mb-10">
+            <Image
+              src="/img/set-cake-left.png"
+              alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
+              fill
+              className="object-cover object-center rounded-[60px] shadow-lg"
+            />
           </div>
 
           {/* Text content */}
-          <div className="max-w-[65%]">
-            <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black mb-17">
+          <div className="max-w-[65%] mx-auto">
+            <p className="text-center text-xl md:text-2xl leading-relaxed font-futura-regular text-black mb-17">
               Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc
               Biệt
             </p>
           </div>
-          <div className="max-w-[65%]">
-            <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
+          <div className="max-w-[65%] mx-auto">
+            <p className="text-center text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
               Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
               mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười
               được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn
@@ -87,35 +77,25 @@ export function SetCake() {
 
         {/* Partnership content */}
         <div className="flex flex-col items-center justify-center gap-6">
-          {/* Hospital image */}
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-10 md:gap-30 w-[100%] h-[200px] md:h-[600px] mb-0">
-            <div className="relative w-full h-[200px] md:h-[600px] mb-0">
-              <Image
-                src="/img/set-cake-left.png"
-                alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-                fill
-                className="object-cover object-center rounded-[20px] shadow-lg"
-              />
-            </div>
-            <div className="relative w-full h-[200px] md:h-[600px] mb-0">
-              <Image
-                src="/img/set-cake-right.png"
-                alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-                fill
-                className="object-cover object-center rounded-[20px] shadow-lg"
-              />
-            </div>
+          {/* Focus image */}
+          <div className="relative w-full h-[260px] md:h-[600px] mb-0">
+            <Image
+              src="/img/set-cake-left.png"
+              alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
+              fill
+              className="object-cover object-center rounded-[20px] shadow-lg"
+            />
           </div>
 
          <div className="max-w-[90%] mx-auto">
-            <p className="text-justify text-mdl md:text-2xl leading-relaxed font-futura-regular text-black mb-4">
+            <p className="text-center text-mdl md:text-2xl leading-relaxed font-futura-regular text-black mb-4">
               Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc
               Biệt
             </p>
           </div>
 
-          <div className="max-w-[95%]">
-            <p className="text-justify text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
+          <div className="max-w-[95%] mx-auto">
+            <p className="text-center text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
               Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
               mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười
               được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn

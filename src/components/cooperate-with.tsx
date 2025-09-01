@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import { useState } from "react";
 
 export default function CooperateWith() {
   return (
@@ -24,14 +23,17 @@ export default function CooperateWith() {
           {/* Main content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-12">
             {/* Left side - Circle */}
-            <div className="flex justify-center">
-              <div className="relative w-[85%] h-[380px] md:h-[600px] mb-10">
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative w-[85%] h-[380px] md:h-[600px] mb-2">
                 <Image
                   src="/img/dien-vien-tri-tam-small-pic.svg"
                   alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
                   fill
                   className="object-cover object-center rounded-full shadow-lg"
                 />
+              </div>
+              <div className="w-full text-center font-futura-bold text-4xl text-black mt-2">
+                DIỄN VIÊN CHÍ TÂM
               </div>
             </div>
 
@@ -73,14 +75,17 @@ export default function CooperateWith() {
           {/* Main content */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-center mb-12">
             {/* Left side - Circle */}
-            <div className="flex justify-center">
-              <div className="relative w-[85%] h-[320px] md:h-[600px] mb-10">
+            <div className="flex flex-col items-center justify-center">
+              <div className="relative w-[85%] h-[320px] md:h-[600px] mb-2">
                 <Image
                   src="/img/dien-vien-tri-tam-small-pic.svg"
                   alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
                   fill
                   className="object-cover object-center rounded-full shadow-lg"
                 />
+              </div>
+              <div className="w-full text-center font-futura-bold text-3xl text-black mt-2">
+                DIỄN VIÊN CHÍ TÂM
               </div>
             </div>
 

@@ -30,10 +30,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="vi" className={`${inter.variable} ${playfair.variable}`}>
-      <body>
-        <Header />
-        <main className="min-h-screen">{children}</main>
-        <Footer />
+      <body className="relative">
+        {/* Global cloud overlays (two sides) */}
+        <div
+          aria-hidden
+          className="pointer-events-none fixed inset-y-0 left-0 w-1/2 bg-[url('/img/cloud.png')] bg-left bg-repeat-y bg-no-repeat bg-[length:auto_320px] md:bg-[length:auto_420px] opacity-70 z-0"
+        />
+        <div
+          aria-hidden
+          className="pointer-events-none fixed inset-y-0 right-0 w-1/2 bg-[url('/img/cloud.png')] bg-right bg-repeat-y bg-no-repeat bg-[length:auto_320px] md:bg-[length:auto_420px] opacity-70 z-0"
+        />
+
+        <div className="relative z-10">
+          <Header />
+          <main className="min-h-screen">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
