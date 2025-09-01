@@ -55,14 +55,17 @@ export default function CooperateWith() {
       </section>
       {/* ---------------------------------------------------------------------------------------------------------- */}
       <section className="block md:hidden py-10 px-6">
-        <div className="max-w-[90%] mx-auto">
+        <div className="max-w-[100%] mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-md md:text-4xl font-bold text-black mb-0 font-futura-bold tracking-wide">
-              ẤM 5 & HÀNH TRÌNH LAN TỎA YÊU
+            <h2 className="text-4xl md:text-8xl font-bold text-black mb-8 font-snell tracking-wide">
+              Chặng 2: Treo Trăng
             </h2>
-            <h2 className="text-md md:text-4xl font-bold text-black mb-4 font-futura-bold tracking-wide">
-              THƯƠNG CÙNG ĐẠI SỨ
+            <h2 className="text-md md:text-4xl font-bold text-black mb-0 font-futura-bold tracking-wide">
+              HÀNH TRÌNH LAN TỎA YÊU THƯƠNG 
+            </h2>
+            <h2 className="text-md md:text-4xl font-bold text-black mb-2 font-futura-bold tracking-wide">
+              CÙNG ĐẠI SỨ
             </h2>
             <div className="w-80 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
           </div>
@@ -71,25 +74,15 @@ export default function CooperateWith() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-3 items-center mb-12">
             {/* Left side - Circle */}
             <div className="flex justify-center">
-              <div className="w-80 h-80 bg-black rounded-full flex items-center justify-center">
-                <span className="text-white text-5xl font-bold">KOL 1</span>
+              <div className="relative w-[85%] h-[320px] md:h-[600px] mb-10">
+                <Image
+                  src="/img/dien-vien-tri-tam-small-pic.svg"
+                  alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
+                  fill
+                  className="object-cover object-center rounded-full shadow-lg"
+                />
               </div>
             </div>
-            {/* <div className="flex gap-4 pt-6">
-              {kolData.map((kol) => (
-                <button
-                  key={kol.id}
-                  onClick={() => setActiveKOL(kol.id)}
-                  className={`w-full h-6 px-0 py-0 rounded-full font-bold text-[10px] transition-all ${
-                    activeKOL === kol.id
-                      ? "bg-[#eac4a2] text-black font-futura-bold hover:bg-[#eac4a2]/80 border border-[#eac4a2] shadow-md shadow-[#b98e64]"
-                      : "bg-black text-white font-futura-bold hover:bg-gray-800"
-                  }`}
-                >
-                  {kol.name}
-                </button>
-              ))}
-            </div> */}
 
             {/* Right side - Content */}
             <div className="space-y-5 pt-6">

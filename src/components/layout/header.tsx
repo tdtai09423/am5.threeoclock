@@ -74,7 +74,7 @@ export default function Header() {
                   </li>
                   <li>
                     <Link
-                      href="/so-dstt"
+                      href="/80-dstt"
                       className="block px-4 py-2 text-sm hover:underline underline-offset-4 transition-all"
                       onClick={handleCloseDropdown}
                     >

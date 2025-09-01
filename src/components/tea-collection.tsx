@@ -48,24 +48,10 @@ export function TeaCollection() {
               </p>
             </div>
           </div>
-          {/* <div className="w-[100%] max-w-full mx-auto text-3xl text-black leading-8 p-6 text-justify rounded-lg mt-15 font-futura-regular">
-            <p className="leading-normal">
-              Ngoài ra, năm nay khách hàng có thể cùng{" "}
-              <strong>THREE O&apos;CLOCK</strong> gửi tặng những phần quà ý
-              nghĩa đến các em nhỏ có hoàn cảnh khó khăn thông qua hoạt động{" "}
-              <strong>GOM TRĂNG.</strong> Mỗi ly nước trong mùa Trung thu năm
-              nay sẽ đi kèm <strong>01 tem cào</strong> chứa nguyên liệu làm nên
-              bánh trung thu, bao gồm: bột, đường, trứng, đậu xanh, khoai
-              môn/hạt sen. Khi sưu tập đủ 5 tem, bạn có thể đổi một chiếc bánh
-              Trung thu <strong>THREE O&apos;CLOCK</strong> đậm vị sẻ chia hoặc
-              có thể chọn trao tặng cho các em bệnh nhi Bệnh Viện Nhi Đồng 1
-              TP.HCM trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm nay.
-            </p>
-          </div> */}
         </div>
       </section>
       {/* --------------------------------------------------------------------------------------------- */}
-      <section className="block md:hidden py-0 px-3 relative">
+      <section className="block md:hidden py-0 px-3 relative mb-20">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-0">
             <h2 className="text-md md:text-4xl font-bold text-gray-800 mb-2 font-futura-bold tracking-wide">
@@ -89,7 +75,7 @@ export function TeaCollection() {
                 TRĂNG TRÒN
               </h3>
               <p className="text-sm text-gray-600 font-futura-regular">
-                Trà sữa khoai môn
+                Trà Sữa Cốm
               </p>
             </div>
 
@@ -111,21 +97,6 @@ export function TeaCollection() {
               </p>
             </div>
           </div>
-          {/* <div className="w-[100%] max-w-full mx-auto text-md text-black leading-8 p-6 text-justify rounded-lg mt-1 font-futura-regular">
-            <p className="leading-normal">
-              Ngoài ra, năm nay khách hàng có thể cùng{" "}
-              <strong>THREE O&apos;CLOCK</strong> gửi tặng những phần quà ý
-              nghĩa đến các em nhỏ có hoàn cảnh khó khăn thông qua hoạt động{" "}
-              <strong>GOM TRĂNG.</strong>
-              Mỗi ly nước trong mùa Trung thu năm nay sẽ đi kèm{" "}
-              <strong>01 tem cào</strong> chứa nguyên liệu làm nên bánh trung
-              thu, bao gồm: bột, đường, trứng, đậu xanh, khoai môn/hạt sen. Khi
-              sưu tập đủ 5 tem, bạn có thể đổi một chiếc bánh Trung thu{" "}
-              <strong>THREE O&apos;CLOCK</strong> đậm vị sẻ chia hoặc có thể
-              chọn trao tặng cho các em bệnh nhi Bệnh Viện Nhi Đồng 1 TP.HCM
-              trong “Đêm Hội Trăng Rằm” vào mùa Ấm năm nay.
-            </p>
-          </div> */}
         </div>
       </section>
     </>
