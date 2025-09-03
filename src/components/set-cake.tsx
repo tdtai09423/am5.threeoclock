@@ -43,7 +43,7 @@ export function SetCake() {
           </div>
 
           {/* Round image */}
-          <div className="relative w-[55%] h-[380px] md:h-[47rem] my-15 rounded-full overflow-hidden ring-1 ring-inset ring-neutral-300">
+          <div className="relative w-[65%] h-[380px] md:h-[55rem] my-15 rounded-full overflow-hidden ring-1 ring-inset ring-neutral-300">
             <Image
               src="/img/look-like-moon.svg"
               alt="Bánh trung thu Vị Trăng – mô phỏng mặt trăng"
