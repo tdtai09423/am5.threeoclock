@@ -8,7 +8,7 @@ export default function KolPage() {
         {/* Main Avatar */}
         <div className="relative mt-0 w-screen h-screen">
           <div className="relative w-screen h-screen">
-            <div className="absolute inset-0 bg-center bg-no-repeat bg-cover bg-[url('/img/dien-vien-tri-tam-large-pic.svg')]" />
+            <div className="absolute inset-0 bg-left bg-no-repeat bg-[length:100%_auto] bg-[url('/img/dien-vien-tri-tam-large-pic.svg')]" />
           </div>
         </div>
       </div>
