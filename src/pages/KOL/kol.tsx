@@ -6,29 +6,39 @@ export default function KolPage() {
       {/* Top Section */}
       <div className="w-screen max-w-none flex flex-col items-center text-center">
         {/* Main Avatar */}
-        <div className="relative mt-0 w-screen h-screen">
-          <div className="relative w-screen h-screen">
-            <div className="absolute inset-0 bg-left bg-no-repeat bg-[length:100%_auto] bg-[url('/img/dien-vien-tri-tam-large-pic.svg')]" />
-          </div>
+        <div className="relative mt-0 w-screen">
+          <Image
+            src="/img/dien-vien-tri-tam-large-pic.svg"
+            alt="Diễn viên Trí Tâm"
+            width={3000}
+            height={1500}
+            priority
+            unoptimized
+            style={{ width: "100vw", height: "auto" }}
+          />
         </div>
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-1 grid-cols-[2fr_5fr] gap-30 w-[80%] h-[390px] md:h-[690px] mb-10">
-        <div className="relative w-full h-[380px] md:h-[570px] mb-0">
+      <div className="grid grid-cols-1 md:grid-cols-[2fr_5fr] gap-8 w-[90%] md:w-[80%] max-w-6xl mx-auto mb-10 px-4">
+        <div className="w-full">
           <Image
             src="/img/dien-vien-tri-tam-small-pic.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center"
+            width={1200}
+            height={1200}
+            className="w-full h-auto"
+            priority={false}
           />
         </div>
-        <div className="relative w-full h-[380px] md:h-[500px] mb-0">
+        <div className="w-full">
           <Image
             src="/img/bubble.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center"
+            width={1200}
+            height={800}
+            className="w-full h-auto"
+            priority={false}
           />
         </div>
       </div>
