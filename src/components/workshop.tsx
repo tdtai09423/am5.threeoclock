@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Workshop() {
   return (
     <section className="relative px-4 md:px-6 lg:px-8">
-      <div className="hidden md:block max-w-[90%] mx-auto">
+      <div className="hidden md:hidden max-w-[90%] mx-auto">
         {/* Desktop version */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
@@ -52,7 +52,7 @@ export function Workshop() {
         </div>
       </div>
       {/* ----------------------------------------------------------------------------------------------- */}
-      <div className="relative block md:hidden max-w-[90%] mx-auto top-[-2rem]">
+      <div className="relative hidden md:hidden max-w-[90%] mx-auto top-[-2rem]">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
             WORKSHOP: THẮP SÁNG TRĂNG RẰM
