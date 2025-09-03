@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Workshop() {
   return (
     <section className="relative px-4 md:px-6 lg:px-8">
-      <div className="hidden md:hidden max-w-[90%] mx-auto">
+      <div className="hidden md:block max-w-[90%] mx-auto">
         {/* Desktop version */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
@@ -22,37 +22,23 @@ export function Workshop() {
             </p>
           </div>
 
-          {/* Text content */}
-          <div className="grid grid-cols-3 md:grid-cols-3 gap-6 mt-32">
+          {/* Image grid */}
+          <div className="grid w-full grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/1.png"
-                alt="Team photo"
-                fill
-                className="object-cover"
-              />
+              <Image src="/img/1.png" alt="Team photo" fill className="object-cover" />
             </div>
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/2.png"
-                alt="Art supplies"
-                fill
-                className="object-cover"
-              />
+              <Image src="/img/2.png" alt="Art supplies" fill className="object-cover" />
             </div>
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/3.png"
-                alt="Handmade crafts"
-                fill
-                className="object-cover"
-              />
+              <Image src="/img/3.png" alt="Handmade crafts" fill className="object-cover" />
             </div>
           </div>
         </div>
       </div>
+
       {/* ----------------------------------------------------------------------------------------------- */}
-      <div className="relative hidden md:hidden max-w-[90%] mx-auto top-[-2rem]">
+      <div className="relative block md:hidden max-w-[90%] mx-auto top-[-2rem]">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
             WORKSHOP: THẮP SÁNG TRĂNG RẰM
@@ -70,31 +56,16 @@ export function Workshop() {
             </p>
           </div>
 
-          {/* Text content */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
+          {/* Image grid */}
+          <div className="grid w-full grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/1.png"
-                alt="Team photo"
-                fill
-                className="object-cover"
-              />
+              <Image src="/img/1.png" alt="Team photo" fill className="object-cover" />
             </div>
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/2.png"
-                alt="Art supplies"
-                fill
-                className="object-cover"
-              />
+              <Image src="/img/2.png" alt="Art supplies" fill className="object-cover" />
             </div>
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
-              <Image
-                src="/img/3.png"
-                alt="Handmade crafts"
-                fill
-                className="object-cover"
-              />
+              <Image src="/img/3.png" alt="Handmade crafts" fill className="object-cover" />
             </div>
           </div>
         </div>
