@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function KolPage() {
   return (
-    <div className="w-full p-0 flex flex-col items-center bg-[url('/img/bg-kol.svg')]">
+    <div className="w-full p-0 flex flex-col items-center">
       {/* Top Section */}
       <div className="w-screen max-w-none flex flex-col items-center text-center">
         {/* Main Avatar */}
