@@ -28,18 +28,22 @@ export function SetCake() {
           {/* Text content */}
           <div className="max-w-[65%] mx-auto">
             <p className="text-center text-xl md:text-2xl leading-relaxed font-futura-regular text-black mb-17">
-              Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc Biệt
+              Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc
+              Biệt
             </p>
           </div>
 
           <div className="max-w-[65%] mx-auto">
             <p className="text-center text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
-              Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn yêu thương cho các em.
+              Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
+              mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười
+              được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn
+              yêu thương cho các em.
             </p>
           </div>
 
           {/* Round image */}
-          <div className="relative w-[50%] h-[380px] md:h-[47rem] my-15 rounded-full overflow-hidden ring-1 ring-inset ring-neutral-300">
+          <div className="relative w-[55%] h-[380px] md:h-[47rem] my-15 rounded-full overflow-hidden ring-1 ring-inset ring-neutral-300">
             <Image
               src="/img/look-like-moon.png"
               alt="Bánh trung thu Vị Trăng – mô phỏng mặt trăng"
@@ -51,7 +55,13 @@ export function SetCake() {
 
           <div className="max-w-[65%]">
             <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
-              Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.
+              Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại
+              tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi
+              khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em
+              nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua.
+              Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm
+              lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa
+              trăng hy vọng.
             </p>
           </div>
         </div>
@@ -82,13 +92,17 @@ export function SetCake() {
 
           <div className="max-w-[90%] mx-auto">
             <p className="text-center text-mdl md:text-2xl leading-relaxed font-futura-regular text-black mb-4">
-              Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc Biệt
+              Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc
+              Biệt
             </p>
           </div>
 
           <div className="max-w-[95%] mx-auto">
             <p className="text-center text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
-              Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn yêu thương cho các em.
+              Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
+              mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười
+              được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn
+              yêu thương cho các em.
             </p>
           </div>
 
@@ -105,7 +119,13 @@ export function SetCake() {
 
           <div className="max-w-[95%]">
             <p className="text-justify text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
-              Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua. Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa trăng hy vọng.
+              Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại
+              tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi
+              khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em
+              nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua.
+              Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm
+              lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa
+              trăng hy vọng.
             </p>
           </div>
         </div>

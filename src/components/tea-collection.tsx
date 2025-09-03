@@ -11,10 +11,10 @@ export function TeaCollection() {
             <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-64 max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-1 gap-64 max-w-5xl mx-auto">
             {/* Trăng Tròn */}
             <div className="text-center">
-              <div className="relative w-64 h-80 md:w-80 md:h-96 mx-auto">
+              <div className="relative w-64 h-80 md:w-160 md:h-250 mx-auto">
                 <Image
                   src="/img/Ly1.png"
                   alt="Ly trà Trăng Tròn"
@@ -22,16 +22,16 @@ export function TeaCollection() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-5xl font-bold text-gray-800 mb-2 font-futura-bold">
+              {/* <h3 className="text-5xl font-bold text-gray-800 mb-2 font-futura-bold">
                 TRĂNG TRÒN
               </h3>
               <p className="text-lg text-gray-600 font-futura-regular">
                 Trà Sữa Khoai Môn
-              </p>
+              </p> */}
             </div>
 
             {/* Trăng Ấm */}
-            <div className="text-center">
+            {/* <div className="text-center">
               <div className="relative w-64 h-80 md:w-80 md:h-96 mx-auto">
                 <Image
                   src="/img/Ly2.png"
@@ -46,7 +46,7 @@ export function TeaCollection() {
               <p className="text-lg text-gray-600 font-futura-regular">
                 Trà Sữa Cốm
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
