@@ -23,7 +23,7 @@ export function Workshop() {
           </div>
 
           {/* Text content */}
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
+          <div className="grid grid-cols-3 md:grid-cols-3 gap-6 mt-32">
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
               <Image
                 src="/img/1.png"
