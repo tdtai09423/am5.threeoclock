@@ -20,7 +20,7 @@ export default function KolPage() {
       </div>
 
       {/* Bottom Section */}
-      <div className="w-screen max-w-none flex items-center justify-center min-h-[100vh] mb-10 px-4 bg-[url('/img/bg-kol.svg')] bg-no-repeat bg-center bg-cover">
+      <div className="w-screen max-w-none flex items-center justify-center min-h-[100vh] mb-10 px-4">
         {/* <div className="w-full"></div>
           <Image
             src="/img/dien-vien-tri-tam-small-pic.svg"
