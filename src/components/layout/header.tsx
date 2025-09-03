@@ -106,7 +106,7 @@ export default function Header() {
             {isDropdownOpen && (
               <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg z-50">
                 <ul className="py-2">
-                  {/* <li>
+                  <li>
                     <Link
                       href="/dai-su-dong-hanh"
                       className="block px-4 py-2 text-sm hover:underline underline-offset-4 transition-all"
@@ -114,7 +114,7 @@ export default function Header() {
                     >
                       ĐẠI SỨ ĐỒNG HÀNH
                     </Link>
-                  </li> */}
+                  </li>
                   <li>
                     <Link
                       href="/80-dstt"
