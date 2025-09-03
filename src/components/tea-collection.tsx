@@ -19,7 +19,7 @@ export function TeaCollection() {
                   src="/img/Ly1.png"
                   alt="Ly trà Trăng Tròn"
                   fill
-                  className="object-contain"
+                  className="object-contain rounded-[20px]"
                 />
               </div>
               {/* <h3 className="text-5xl font-bold text-gray-800 mb-2 font-futura-bold">
