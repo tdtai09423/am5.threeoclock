@@ -6,7 +6,7 @@ export default function DSGTPage() {
       {/* Top Section */}
       <div className="w-full max-w-4xl flex flex-col items-center text-center">
         {/* Main Avatar */}
-        <div className="relative mt-6">
+        <div className="flex flex-col items-center justify-center gap-6">
           <div className="relative w-[100vw] h-[150vh] md:h-[148vh] max-w-none">
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/img/dsgt-main.svg')]"
@@ -15,7 +15,7 @@ export default function DSGTPage() {
               }}
             ></div>
           </div>
-          <div className="relative w-[80%] h-[380px] md:h-[570px] mb-30">
+          <div className="relative w-[82%] h-[380px] md:h-[440px] mb-30">
             <Image
               src="/img/dai-su-item.svg"
               alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
