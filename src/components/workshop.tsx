@@ -23,7 +23,7 @@ export function Workshop() {
           </div>
 
           {/* Image grid */}
-          <div className="grid w-full grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
+          {/* <div className="grid w-full grid-cols-2 lg:grid-cols-3 gap-6 mt-32">
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
               <Image
                 src="/img/1.png"
@@ -48,7 +48,7 @@ export function Workshop() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -72,7 +72,7 @@ export function Workshop() {
           </div>
 
           {/* Image grid */}
-          <div className="grid w-full grid-cols-2 lg:grid-cols-3 gap-6 mt-32 mb-32">
+          {/* <div className="grid w-full grid-cols-2 lg:grid-cols-3 gap-6 mt-32 mb-32">
             <div className="relative w-full aspect-square rounded-[40px] overflow-hidden">
               <Image
                 src="/img/1.png"
@@ -97,7 +97,7 @@ export function Workshop() {
                 className="object-cover"
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
