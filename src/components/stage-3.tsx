@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Stage3() {
   return (
-    <section className="relative px-4 md:px-6 lg:px-8 md:mb-10">
+    <section className="relative px-4 md:px-6 lg:px-8 md:mb-10 md:mt-30">
       {/* Decorative stars */}
       {/* <div className="absolute top-8 left-12 text-amber-300 text-sm">✦</div>
       <div className="absolute top-20 right-16 text-amber-400 text-xs">✦</div>
