@@ -1,5 +1,6 @@
-import TTPage from "@/pages/TT/tam-tinh";
+import { notFound } from "next/navigation";
 
 export default function Page() {
-  return <TTPage />;
+  // Tạm thời vô hiệu hóa trang này
+  notFound();
 }

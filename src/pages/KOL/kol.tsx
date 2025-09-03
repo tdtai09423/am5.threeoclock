@@ -4,16 +4,11 @@ export default function KolPage() {
   return (
     <div className="w-full p-0 flex flex-col items-center bg-[url('/img/bg-kol.svg')]">
       {/* Top Section */}
-      <div className="w-full max-w-4xl flex flex-col items-center text-center">
+      <div className="w-screen max-w-none flex flex-col items-center text-center">
         {/* Main Avatar */}
-        <div className="relative mt-6">
-          <div className="relative w-[100vw] h-[150vh] md:h-[148vh] max-w-none">
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/img/dien-vien-tri-tam-large-pic.svg')]"
-              style={{
-                backgroundSize: "100% 110%",
-              }}
-            ></div>
+        <div className="relative mt-0 w-screen h-screen">
+          <div className="relative w-screen h-screen">
+            <div className="absolute inset-0 bg-center bg-no-repeat bg-cover bg-[url('/img/dien-vien-tri-tam-large-pic.svg')]" />
           </div>
         </div>
       </div>
