@@ -109,7 +109,7 @@ export default function Header() {
                       80 ĐSTT
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/nhan-vien-3h"
                       className="block px-4 py-2 text-sm hover:underline underline-offset-4 transition-all"
@@ -117,7 +117,7 @@ export default function Header() {
                     >
                       NHÂN VIÊN 3H
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             )}
@@ -197,7 +197,7 @@ export default function Header() {
                       80 ĐSTT
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link
                       href="/nhan-vien-3h"
                       className={`${pathname === "/nhan-vien-3h" ? "underline underline-offset-4" : ""} text-base font-normal text-gray-600`}
@@ -205,7 +205,7 @@ export default function Header() {
                     >
                       NHÂN VIÊN 3H
                     </Link>
-                  </li>
+                  </li> */}
                 </>
               )}
             </ul>
