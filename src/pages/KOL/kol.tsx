@@ -20,8 +20,8 @@ export default function KolPage() {
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 w-[90%] md:w-[80%] max-w-6xl mx-auto mb-10 px-4">
-        {/* <div className="w-full">
+      <div className="w-screen max-w-none flex items-center justify-center min-h-[100vh] mb-10 px-4 bg-[url('/img/bg-kol.svg')] bg-no-repeat bg-center bg-cover">
+        {/* <div className="w-full"></div>
           <Image
             src="/img/dien-vien-tri-tam-small-pic.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
@@ -31,13 +31,12 @@ export default function KolPage() {
             priority={false}
           />
         </div> */}
-        <div className="w-full">
+        <div className="relative w-[90vw] md:w-[80vw] h-[100vh]">
           <Image
             src="/img/bubble.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            width={1200}
-            height={800}
-            className="w-full h-auto"
+            fill
+            className="object-contain object-center"
             priority={false}
           />
         </div>
