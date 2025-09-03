@@ -26,7 +26,7 @@ export function JourneyPhotos() {
 
         {/* 2022 Photo - positioned on the right */}
         <div
-          className="absolute right-[-9%] top-[3rem] md:top-[-130px] md:right-[-35%] flex flex-col items-center space-y-2"
+          className="absolute right-[-3%] top-[3rem] md:top-[-130px] md:right-[-35%] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
@@ -47,7 +47,7 @@ export function JourneyPhotos() {
 
         {/* 2023 Photo - positioned bottom left */}
         <div
-          className="absolute left-[-8%] bottom-[-23rem] md:left-[-37%] md:bottom-[-380px] flex flex-col items-center space-y-2"
+          className="absolute left-[-5%] bottom-[-23rem] md:left-[-37%] md:bottom-[-380px] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
@@ -68,7 +68,7 @@ export function JourneyPhotos() {
 
         {/* 2024 Photo - positioned bottom right */}
         <div
-          className="absolute right-[-10%] bottom-[-19rem] md:right-[-38%] md:bottom-[-330px] flex flex-col items-center space-y-2"
+          className="absolute right-[-6%] bottom-[-19rem] md:right-[-38%] md:bottom-[-330px] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
