@@ -7,33 +7,28 @@ export default function DSGTPage() {
       <div className="w-full max-w-4xl flex flex-col items-center text-center">
         {/* Main Avatar */}
         <div className="flex flex-col items-center justify-center gap-6">
-          <div className="relative w-[100vw] h-[150vh] md:h-[148vh] max-w-none">
-            <div
-              className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/img/dsgt-main.svg')]"
-              style={{
-                backgroundSize: "100% 110%",
-              }}
-            ></div>
+          <div className="relative w-[100vw] h-[100vh] lg:h-screen max-w-none">
+            <div className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-[url('/img/dsgt-main.svg')]" />
           </div>
           <div className="relative w-[82%] h-[380px] md:h-[440px] mb-30">
             <Image
               src="/img/dai-su-item.svg"
               alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
               fill
-              className="object-cover object-center"
+              className="object-contain object-center"
             />
           </div>
         </div>
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-3 gap-13 w-[95%] h-[390px] md:h-[690px] mb-10">
+      <div className="grid grid-cols-3 gap-13 w-[95%] h-auto mb-10">
         <div className="relative w-full h-[340px] md:h-[46rem] mb-0">
           <Image
             src="/img/dai-su-item-1.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
             fill
-            className="object-cover object-center"
+            className="object-contain object-center"
           />
         </div>
         <div className="relative w-full h-[340px] md:h-[46rem] mb-0">
@@ -41,7 +36,7 @@ export default function DSGTPage() {
             src="/img/dai-su-item-2.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
             fill
-            className="object-cover object-center"
+            className="object-contain object-center"
           />
         </div>
         <div className="relative w-full h-[340px] md:h-[46rem] mb-0">
@@ -49,7 +44,7 @@ export default function DSGTPage() {
             src="/img/dai-su-item-3.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
             fill
-            className="object-cover object-center"
+            className="object-contain object-center"
           />
         </div>
       </div>
