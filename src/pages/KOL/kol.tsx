@@ -20,8 +20,8 @@ export default function KolPage() {
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-1 md:grid-cols-[2fr_5fr] gap-8 w-[90%] md:w-[80%] max-w-6xl mx-auto mb-10 px-4">
-        <div className="w-full">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 w-[90%] md:w-[80%] max-w-6xl mx-auto mb-10 px-4">
+        {/* <div className="w-full">
           <Image
             src="/img/dien-vien-tri-tam-small-pic.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
@@ -30,7 +30,7 @@ export default function KolPage() {
             className="w-full h-auto"
             priority={false}
           />
-        </div>
+        </div> */}
         <div className="w-full">
           <Image
             src="/img/bubble.svg"
