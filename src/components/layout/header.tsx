@@ -23,7 +23,15 @@ export default function Header() {
   };
 
   // Kiểm tra xem có đang ở một trong các trang dropdown không
-  const isDropdownActive = pathname ? ["/kol", "/dai-su-gom-trang", "/dai-su-dong-hanh", "/so-dstt", "/nhan-vien-3h"].includes(pathname) : false;
+  const isDropdownActive = pathname
+    ? [
+        "/kol",
+        "/dai-su-gom-trang",
+        "/dai-su-dong-hanh",
+        "/so-dstt",
+        "/nhan-vien-3h",
+      ].includes(pathname)
+    : false;
 
   return (
     <header className="w-full bg-white relative z-40">
@@ -77,13 +85,20 @@ export default function Header() {
               } flex items-center gap-1`}
             >
               ĐẠI SỨ GOM TRĂNG
-              <svg 
-                className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`}
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className={`w-4 h-4 transition-transform duration-200 ${
+                  isDropdownOpen ? "rotate-180" : ""
+                }`}
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M19 9l-7 7-7-7"
+                />
               </svg>
             </button>
 
@@ -91,7 +106,7 @@ export default function Header() {
             {isDropdownOpen && (
               <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg z-50">
                 <ul className="py-2">
-                  <li>
+                  {/* <li>
                     <Link
                       href="/dai-su-dong-hanh"
                       className="block px-4 py-2 text-sm hover:underline underline-offset-4 transition-all"
@@ -99,7 +114,7 @@ export default function Header() {
                     >
                       ĐẠI SỨ ĐỒNG HÀNH
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link
                       href="/80-dstt"
@@ -140,12 +155,25 @@ export default function Header() {
       {isMobileMenuOpen && (
         <div className="md:hidden fixed inset-0 z-50">
           {/* backdrop */}
-          <div className="absolute inset-0 bg-black/30" onClick={() => setIsMobileMenuOpen(false)} />
+          <div
+            className="absolute inset-0 bg-black/30"
+            onClick={() => setIsMobileMenuOpen(false)}
+          />
           {/* sidebar panel: half screen width */}
           <div className="relative h-full w-2/3 bg-white px-4 py-6 flex flex-col">
             <div className="flex items-center justify-center">
-              <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
-                <Image src="/img/logo.png" alt="Logo" width={90} height={90} priority />
+              <Link
+                href="/"
+                className="flex items-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <Image
+                  src="/img/logo.png"
+                  alt="Logo"
+                  width={90}
+                  height={90}
+                  priority
+                />
               </Link>
             </div>
 
@@ -153,7 +181,9 @@ export default function Header() {
               <li>
                 <Link
                   href="/"
-                  className={`${pathname === "/" ? "underline underline-offset-4" : ""}`}
+                  className={`${
+                    pathname === "/" ? "underline underline-offset-4" : ""
+                  }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   TRANG CHỦ
@@ -168,12 +198,19 @@ export default function Header() {
                 >
                   <span>ĐẠI SỨ GOM TRĂNG</span>
                   <svg
-                    className={`w-4 h-4 transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`}
+                    className={`w-4 h-4 transition-transform duration-200 ${
+                      isMobileDropdownOpen ? "rotate-180" : ""
+                    }`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M19 9l-7 7-7-7"
+                    />
                   </svg>
                 </button>
               </li>
@@ -182,7 +219,11 @@ export default function Header() {
                   <li>
                     <Link
                       href="/dai-su-dong-hanh"
-                      className={`${pathname === "/dai-su-dong-hanh" ? "underline underline-offset-4" : ""} text-base font-normal text-gray-600`}
+                      className={`${
+                        pathname === "/dai-su-dong-hanh"
+                          ? "underline underline-offset-4"
+                          : ""
+                      } text-base font-normal text-gray-600`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       ĐẠI SỨ ĐỒNG HÀNH
@@ -191,7 +232,11 @@ export default function Header() {
                   <li>
                     <Link
                       href="/80-dstt"
-                      className={`${pathname === "/80-dstt" ? "underline underline-offset-4" : ""} text-base font-normal text-gray-600`}
+                      className={`${
+                        pathname === "/80-dstt"
+                          ? "underline underline-offset-4"
+                          : ""
+                      } text-base font-normal text-gray-600`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
                       80 ĐSTT
