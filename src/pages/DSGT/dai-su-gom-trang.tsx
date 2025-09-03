@@ -6,7 +6,7 @@ export default function DSGTPage() {
       {/* Top Section */}
       <div className="w-full max-w-4xl flex flex-col items-center text-center">
         {/* Main Avatar */}
-        <div className="relative mt-6">
+        <div className="flex flex-col items-center justify-center gap-6">
           <div className="relative w-[100vw] h-[150vh] md:h-[148vh] max-w-none">
             <div
               className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-[url('/img/dsgt-main.svg')]"
@@ -15,9 +15,9 @@ export default function DSGTPage() {
               }}
             ></div>
           </div>
-          <div className="relative w-[80%] h-[380px] md:h-[570px] mb-30">
+          <div className="relative w-[82%] h-[380px] md:h-[440px] mb-30">
             <Image
-              src="/img/dsgt-under-tittle.svg"
+              src="/img/dai-su-item.svg"
               alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
               fill
               className="object-cover object-center"
@@ -27,33 +27,33 @@ export default function DSGTPage() {
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-3 gap-12 w-[90%] h-[390px] md:h-[690px] mb-10">
-        <div className="relative w-full h-[380px] md:h-[46rem] mb-0">
+      <div className="grid grid-cols-3 gap-13 w-[95%] h-[390px] md:h-[690px] mb-10">
+        <div className="relative w-full h-[340px] md:h-[46rem] mb-0">
           <Image
-            src="/img/dai-su-item.svg"
+            src="/img/dai-su-item-1.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
             fill
             className="object-cover object-center"
           />
         </div>
-        <div className="relative w-full h-[380px] md:h-[46rem] mb-0">
+        <div className="relative w-full h-[340px] md:h-[46rem] mb-0">
           <Image
-            src="/img/dai-su-item.svg"
+            src="/img/dai-su-item-2.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
             fill
             className="object-cover object-center"
           />
         </div>
-        <div className="relative w-full h-[380px] md:h-[46rem] mb-0">
+        <div className="relative w-full h-[340px] md:h-[46rem] mb-0">
           <Image
-            src="/img/dai-su-item.svg"
+            src="/img/dai-su-item-3.svg"
             alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
             fill
             className="object-cover object-center"
           />
         </div>
       </div>
-      <div className="text-center mt-40 mb-30">
+      {/* <div className="text-center mt-40 mb-30">
         <h2 className="text-lg md:text-8xl font-extrabold text-black font-futura-bold tracking-wide mb-6">
           80 ĐSTT
         </h2>
@@ -227,7 +227,7 @@ export default function DSGTPage() {
             className="object-cover object-center rounded-full"
           />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
