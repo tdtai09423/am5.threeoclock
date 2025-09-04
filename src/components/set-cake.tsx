@@ -35,7 +35,7 @@ export function SetCake() {
           </div>
 
           {/* Round image */}
-          <div className="relative w-[65%] h-[380px] md:h-[55rem] my-15 rounded-full overflow-hidden ring-1 ring-inset ring-neutral-300">
+          <div className="relative w-[65%] h-[380px] md:h-[55rem] my-15 rounded-full overflow-hidden">
             <Image
               src="/img/look-like-moon.png"
               alt="Bánh trung thu Vị Trăng – mô phỏng mặt trăng"
@@ -72,7 +72,7 @@ export function SetCake() {
 
         <div className="flex flex-col items-center justify-center gap-6">
           {/* Focus image – border hugs image */}
-          <div className="relative w-full aspect-[3/4] mb-0 rounded-[20px] overflow-hidden ring-1 ring-inset ring-neutral-300 shadow-md">
+          <div className="relative w-full aspect-[3/4] mb-0 rounded-[20px] overflow-hidden">
             <Image
               src="/img/set-cake-left.png"
               alt="Bánh trung thu Vị Trăng – set ảnh chính"
