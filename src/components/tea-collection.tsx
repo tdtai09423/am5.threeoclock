@@ -63,7 +63,7 @@ export function TeaCollection() {
           <div className="grid grid-cols-1 gap-0 max-w-5xl mx-auto">
             {/* Trăng Tròn */}
             <div className="text-center">
-              <div className="relative w-30 h-40 md:w-80 md:h-96 mx-auto">
+              <div className="relative w-40 h-53 md:w-80 md:h-96 mx-auto">
                 <Image
                   src="/img/Ly1.png"
                   alt="Ly trà Trăng Tròn"

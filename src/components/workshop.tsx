@@ -66,8 +66,8 @@ export function Workshop() {
         </div>
 
         <div className="w-full flex flex-col items-center justify-center gap-6">
-          <div className="max-w-[80%]">
-            <p className="text-justify text-lg leading-relaxed font-futura-regular text-black">
+          <div className="max-w-[90%]">
+            <p className="text-justify text-md leading-relaxed font-futura-regular text-black">
               Team 3H sẽ tổ chức Workshop “Thắp Sáng Trăng Rằm” làm 300 chiếc
               lồng đèn để tặng cho trẻ nhỏ tại Bệnh viện Nhi Đồng 1 TP.HCM vào
               “Đêm Hội Trăng Rằm” ngày 2/10/2025
