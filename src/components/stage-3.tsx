@@ -122,7 +122,7 @@ export function Stage3() {
             </p>
           </div>
 
-          <div className="relative w-[95%] h-[220px] md:h-[600px] mb-0 mt-5">
+          {/* <div className="relative w-[95%] h-[220px] md:h-[600px] mb-0 mt-5">
             <Image
               src="/img/BenhVienNhiDong1.png"
               alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
@@ -136,7 +136,7 @@ export function Stage3() {
               Bài nhạc ghi dấu hành trình Ấm 5 với giai điệu tươi vui, được lấy
               cảm hứng từ những mong ước trong sáng của trẻ thơ.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

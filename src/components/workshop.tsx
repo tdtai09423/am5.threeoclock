@@ -26,13 +26,31 @@ export function Workshop() {
           {/* === Image grid (to bự ra) === */}
           <div className="w-full grid grid-cols-2 gap-6 mt-10">
             <div className="relative aspect-square rounded-[15px] overflow-hidden">
-              <Image src="/img/1.png" alt="Team photo" fill className="object-cover" sizes="50vw" />
+              <Image
+                src="/img/1.png"
+                alt="Team photo"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
             </div>
             <div className="relative aspect-square rounded-[15px] overflow-hidden">
-              <Image src="/img/2.png" alt="Art supplies" fill className="object-cover" sizes="50vw" />
+              <Image
+                src="/img/2.png"
+                alt="Art supplies"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
             </div>
             <div className="relative col-span-2 aspect-[3/2] rounded-[15px] overflow-hidden">
-              <Image src="/img/3.png" alt="Handmade crafts" fill className="object-cover" sizes="100vw" />
+              <Image
+                src="/img/3.png"
+                alt="Handmade crafts"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
             </div>
           </div>
         </div>
@@ -48,8 +66,8 @@ export function Workshop() {
         </div>
 
         <div className="w-full flex flex-col items-center justify-center gap-6">
-          <div className="max-w-[57%]">
-            <p className="text-justify text-xl leading-relaxed font-futura-regular text-black">
+          <div className="max-w-[80%]">
+            <p className="text-justify text-lg leading-relaxed font-futura-regular text-black">
               Team 3H sẽ tổ chức Workshop “Thắp Sáng Trăng Rằm” làm 300 chiếc
               lồng đèn để tặng cho trẻ nhỏ tại Bệnh viện Nhi Đồng 1 TP.HCM vào
               “Đêm Hội Trăng Rằm” ngày 2/10/2025
@@ -59,13 +77,31 @@ export function Workshop() {
           {/* === Image grid (to bự ra) === */}
           <div className="w-full grid grid-cols-2 gap-6 mt-10 mb-8">
             <div className="relative aspect-square rounded-[15px] overflow-hidden">
-              <Image src="/img/1.png" alt="Team photo" fill className="object-cover" sizes="50vw" />
+              <Image
+                src="/img/1.png"
+                alt="Team photo"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
             </div>
             <div className="relative aspect-square rounded-[15px] overflow-hidden">
-              <Image src="/img/2.png" alt="Art supplies" fill className="object-cover" sizes="50vw" />
+              <Image
+                src="/img/2.png"
+                alt="Art supplies"
+                fill
+                className="object-cover"
+                sizes="50vw"
+              />
             </div>
             <div className="relative col-span-2 aspect-[3/2] rounded-[15px] overflow-hidden">
-              <Image src="/img/3.png" alt="Handmade crafts" fill className="object-cover" sizes="100vw" />
+              <Image
+                src="/img/3.png"
+                alt="Handmade crafts"
+                fill
+                className="object-cover"
+                sizes="100vw"
+              />
             </div>
           </div>
         </div>

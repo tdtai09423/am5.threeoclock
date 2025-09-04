@@ -25,14 +25,6 @@ export function SetCake() {
             />
           </div>
 
-          {/* Text content */}
-          <div className="max-w-[65%] mx-auto">
-            <p className="text-center text-xl md:text-2xl leading-relaxed font-futura-regular text-black mb-17">
-              Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc
-              Biệt
-            </p>
-          </div>
-
           <div className="max-w-[65%] mx-auto">
             <p className="text-center text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
               Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
@@ -43,13 +35,13 @@ export function SetCake() {
           </div>
 
           {/* Round image */}
-          <div className="relative mx-auto w-[80%] max-w-[420px] aspect-square rounded-full overflow-hidden my-6">
+          <div className="relative w-[65%] h-[380px] md:h-[55rem] my-15 rounded-full overflow-hidden ring-1 ring-inset ring-neutral-300">
             <Image
-              src="/img/look-like-moon.png"
+              src="/img/look-like-moon.svg"
               alt="Bánh trung thu Vị Trăng – mô phỏng mặt trăng"
               fill
-              sizes="80vw"
-              className="object-contain scale-[1.005]"
+              className="object-cover object-center"
+              sizes="(min-width: 1024px) 50vw, 100vw"
             />
           </div>
 
@@ -90,13 +82,6 @@ export function SetCake() {
             />
           </div>
 
-          <div className="max-w-[90%] mx-auto">
-            <p className="text-center text-mdl md:text-2xl leading-relaxed font-futura-regular text-black mb-4">
-              Hộp bánh Trung thu gồm: 2 bánh trung thu + 1 túi trà Olong Đặc
-              Biệt
-            </p>
-          </div>
-
           <div className="max-w-[95%] mx-auto">
             <p className="text-center text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
               Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
@@ -109,7 +94,7 @@ export function SetCake() {
           {/* Round image */}
           <div className="relative w-[100%] md:w-[50%] h-[320px] md:h-[47rem] my-6 rounded-full overflow-hidden ring-1 ring-inset ring-neutral-300">
             <Image
-              src="/img/look-like-moon.png"
+              src="/img/look-like-moon.svg"
               alt="Bánh trung thu Vị Trăng – mô phỏng mặt trăng"
               fill
               className="object-cover object-center"

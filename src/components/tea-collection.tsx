@@ -60,7 +60,7 @@ export function TeaCollection() {
             <div className="w-85 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
           </div>
 
-          <div className="grid grid-cols-2 gap-0 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 gap-0 max-w-5xl mx-auto">
             {/* Trăng Tròn */}
             <div className="text-center">
               <div className="relative w-30 h-40 md:w-80 md:h-96 mx-auto">
@@ -71,30 +71,6 @@ export function TeaCollection() {
                   className="object-contain"
                 />
               </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-0 font-futura-bold">
-                TRĂNG TRÒN
-              </h3>
-              <p className="text-sm text-gray-600 font-futura-regular">
-                Trà Sữa Cốm
-              </p>
-            </div>
-
-            {/* Trăng Ấm */}
-            <div className="text-center">
-              <div className="relative w-30 h-40 md:w-80 md:h-96 mx-auto">
-                <Image
-                  src="/img/Ly2.png"
-                  alt="Ly trà Trăng Ấm"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-              <h3 className="text-lg font-bold text-gray-800 mb-0 font-futura-bold">
-                TRĂNG ẤM
-              </h3>
-              <p className="text-sm text-gray-600 font-futura-regular">
-                Trà sữa cốm
-              </p>
             </div>
           </div>
         </div>
