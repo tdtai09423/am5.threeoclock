@@ -57,18 +57,18 @@ export function TeaCollection() {
             <h2 className="text-md md:text-4xl font-bold text-gray-800 mb-2 font-futura-bold tracking-wide">
               BỘ SƯU TẬP MỚI: TRÀ TRÔNG TRĂNG
             </h2>
-            <div className="w-85 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
+            <div className="w-85 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto mb-20"></div>
           </div>
 
-          <div className="grid grid-cols-1 gap-0 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 gap-0 max-w-4xl mx-auto">
             {/* Trăng Tròn */}
             <div className="text-center">
-              <div className="relative w-40 h-53 md:w-80 md:h-96 mx-auto">
+              <div className="relative w-auto h-[25rem] md:w-80 md:h-96 mx-auto">
                 <Image
                   src="/img/Ly1.png"
                   alt="Ly trà Trăng Tròn"
                   fill
-                  className="object-contain"
+                  className="object-contain rounded-[20px]"
                 />
               </div>
             </div>
