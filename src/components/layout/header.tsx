@@ -34,7 +34,7 @@ export default function Header() {
     : false;
 
   return (
-    <header className="w-full relative z-40">
+    <header className="w-full bg-white relative z-40">
       <nav className="max-w-[80%] mx-auto flex items-center justify-between px-0 py-4">
         {/* Nút hamburger cho mobile */}
         <button
@@ -104,7 +104,7 @@ export default function Header() {
 
             {/* Dropdown Menu */}
             {isDropdownOpen && (
-              <div className="absolute top-full left-0 mt-2 w-48 border border-gray-200 shadow-lg z-50">
+              <div className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-200 shadow-lg z-50">
                 <ul className="py-2">
                   <li>
                     <Link
@@ -153,7 +153,7 @@ export default function Header() {
 
       {/* Mobile menu overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-white fixed inset-0 z-50 h-[19px]">
+        <div className="md:hidden fixed inset-0 z-50">
           {/* backdrop */}
           <div
             className="absolute inset-0 bg-black/30"
@@ -170,8 +170,8 @@ export default function Header() {
                 <Image
                   src="/img/logo.png"
                   alt="Logo"
-                  width={60}
-                  height={60}
+                  width={90}
+                  height={90}
                   priority
                 />
               </Link>
