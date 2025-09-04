@@ -56,7 +56,7 @@ export default function CooperateWith() {
           </div>
 
           {/* Image Grid (DESKTOP) — Giữ thứ tự: 1,2 ở trên; 3 ở dưới full width */}
-          <div className="grid grid-cols-2 gap-6">
+          {/* <div className="grid grid-cols-2 gap-6">
             <div className="relative aspect-square rounded-[15px] overflow-hidden">
               <Image src="/img/1.png" alt="Team photo" fill className="object-cover" sizes="50vw" />
             </div>
@@ -66,7 +66,7 @@ export default function CooperateWith() {
             <div className="relative col-span-2 aspect-[3/2] rounded-[15px] overflow-hidden">
               <Image src="/img/3.png" alt="Handmade crafts" fill className="object-cover" sizes="100vw" />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -122,7 +122,7 @@ export default function CooperateWith() {
           </div>
 
           {/* Image Grid (MOBILE) — cùng thứ tự như desktop */}
-          <div className="grid grid-cols-2 gap-6 mt-2">
+          {/* <div className="grid grid-cols-2 gap-6 mt-2">
             <div className="relative aspect-square rounded-[15px] overflow-hidden">
               <Image src="/img/1.png" alt="Team photo" fill className="object-cover" sizes="50vw" />
             </div>
@@ -132,7 +132,7 @@ export default function CooperateWith() {
           </div>
           <div className="relative aspect-[3/2] rounded-[15px] overflow-hidden mt-4 w-full">
             <Image src="/img/3.png" alt="Handmade crafts" fill className="object-cover" sizes="100vw" />
-          </div>
+          </div> */}
         </div>
 
         {/* Extra text block */}

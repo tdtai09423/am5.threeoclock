@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
 export function Stage3() {
@@ -52,7 +53,7 @@ export function Stage3() {
             <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
               Ngày 2/10, trong Ngày hội Trung thu:{" "}
               <strong>”Câu Chuyện Mùa Trăng”</strong> tổ chức tại Bệnh Viện Nhi
-              Đồng 1 Thành phố Hồ Chí Minh trao tặng 300 phần quà và 50.000.000
+              Đồng 1, TP.HCM, THREE O'CLOCK trao tặng 300 phần quà và 50.000.000
               VNĐ dành tặng cho 10 trẻ em có hoàn cảnh khó khăn.
             </p>
           </div>
@@ -116,7 +117,7 @@ export function Stage3() {
             <p className="text-justify text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
               Ngày 2/10, trong Ngày hội Trung thu:{" "}
               <strong>”Câu Chuyện Mùa Trăng”</strong> tổ chức tại Bệnh Viện Nhi
-              Đồng 1 Thành phố Hồ Chí Minh trao tặng 300 phần quà và 50.000.000
+              Đồng 1, TP.HCM, THREE O'CLOCK trao tặng 300 phần quà và 50.000.000
               VNĐ dành tặng cho 10 trẻ em có hoàn cảnh khó khăn.
             </p>
           </div>
