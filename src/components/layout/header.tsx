@@ -153,7 +153,7 @@ export default function Header() {
 
       {/* Mobile menu overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 z-50 h-[20px]">
+        <div className="md:hidden bg-white fixed inset-0 z-50 h-[20px]">
           {/* backdrop */}
           <div
             className="absolute inset-0 bg-black/30"
@@ -170,8 +170,8 @@ export default function Header() {
                 <Image
                   src="/img/logo.png"
                   alt="Logo"
-                  width={70}
-                  height={70}
+                  width={60}
+                  height={60}
                   priority
                 />
               </Link>
