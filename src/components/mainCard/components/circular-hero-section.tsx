@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function CircularHeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-0 py-0 bg-transparent overflow-hidden mt-10 md:mt-0">
+    <section className="relative min-h-screen flex items-center justify-center px-0 py-0 bg-transparent overflow-hidden mt-3 md:mt-0">
       <div className="relative w-[100vw] h-[150vh] md:h-[230vh] max-w-none">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-none md:bg-[url('/img/moon.svg')] top-30"
