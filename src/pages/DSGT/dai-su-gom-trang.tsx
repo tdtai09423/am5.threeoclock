@@ -34,7 +34,6 @@ export default function DSGTPage() {
       const slideCenter = r.left + r.width / 2;
       const dist = Math.abs(slideCenter - center);
 
-      // t: 1 = ở giữa, 0 = xa mép
       const t = Math.max(0, 1 - dist / (el.clientWidth / 1.2));
       const scale = 0.93 + 0.07 * t;
       const opacity = 0.55 + 0.45 * t;
@@ -55,7 +54,6 @@ export default function DSGTPage() {
   };
 
   useEffect(() => {
-    // init effect + resnap khi resize
     applyEffects();
     const reSnap = () => {
       goTo(idx);
@@ -68,15 +66,24 @@ export default function DSGTPage() {
 
   return (
     <div className="w-full p-0 flex flex-col items-center overflow-x-hidden bg-[url('/img/dsgt-bg.svg')] bg-top bg-no-repeat bg-[length:100%_auto]">
-      {/* Top Section */}
+      {/* ===================== TOP SECTION ===================== */}
       <div className="w-full max-w-6xl flex flex-col items-center text-center">
         <div className="flex flex-col items-center justify-center gap-6 w-full">
-          <div className="relative w-full h-[60vh] sm:h-[70vh] md:h-[85vh] lg:h-screen">
+          {/* dsgt-main.svg: scale 1.3, neo TOP; giảm h + negative margin ở mobile để bớt gap */}
+          <div className="relative w-full h-[50vh] sm:h-[58vh] md:h-[85vh] lg:h-screen overflow-visible -mb-8 sm:-mb-12 md:mb-0">
             <div
-              className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+              className="
+                absolute top-0 left-1/2 -translate-x-1/2
+                h-full w-screen
+                bg-no-repeat bg-top bg-contain
+                origin-top scale-[1.3]
+                pointer-events-none
+              "
               style={{ backgroundImage: "url('/img/dsgt-main.svg')" }}
             />
           </div>
+
+          {/* banner dưới */}
           <div className="relative w-[92%] sm:w-[88%] md:w-[82%] h-[220px] sm:h-[300px] md:h-[380px] lg:h-[440px] mb-12">
             <Image
               src="/img/dai-su-item.svg"
@@ -89,7 +96,7 @@ export default function DSGTPage() {
         </div>
       </div>
 
-      {/* Bottom Section — desktop */}
+      {/* ===================== BOTTOM SECTION — DESKTOP ===================== */}
       <div className="hidden md:grid grid-cols-3 gap-10 w-[95%] max-w-6xl mx-auto h-auto mb-10">
         {items.map((it) => (
           <div key={it.src} className="relative w-full aspect-[2/3]">
@@ -104,7 +111,7 @@ export default function DSGTPage() {
         ))}
       </div>
 
-      {/* Bottom Section — mobile slider */}
+      {/* ===================== BOTTOM SECTION — MOBILE SLIDER ===================== */}
       <div className="md:hidden relative w-full mb-14">
         <div
           ref={trackRef}
@@ -156,7 +163,7 @@ export default function DSGTPage() {
 
         {/* dots */}
         <div className="absolute left-1/2 -translate-x-1/2 bottom-2 flex gap-2">
-          {items.map((_, i) => (
+          {[0, 1, 2].map((i) => (
             <button
               key={i}
               aria-label={`Đi tới slide ${i + 1}`}
@@ -168,187 +175,6 @@ export default function DSGTPage() {
           ))}
         </div>
       </div>
-    {/* </div>
-  );
-} */}
-
-
-
-      {/* <div className="text-center mt-40 mb-30">
-        <h2 className="text-lg md:text-8xl font-extrabold text-black font-futura-bold tracking-wide mb-6">
-          80 ĐSTT
-        </h2>
-      </div>
-      <div className="grid grid-cols-4 gap-20 w-[85%] h-[390px] md:h-[25rem] mb-2">
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-4 gap-20 w-[85%] h-[390px] md:h-[25rem] mb-2">
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-4 gap-20 w-[85%] h-[390px] md:h-[25rem] mb-2">
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-4 gap-20 w-[85%] h-[390px] md:h-[25rem] mb-2">
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-      </div>
-      <div className="grid grid-cols-4 gap-20 w-[85%] h-[390px] md:h-[25rem] mb-2">
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-        <div className="relative w-full h-[380px] md:h-[21rem] mb-0">
-          <Image
-            src="/img/1.png"
-            alt="Bệnh viện Nhi Đồng 1 với trang trí bóng bay"
-            fill
-            className="object-cover object-center rounded-full"
-          />
-        </div>
-      </div> */}
     </div>
   );
 }
