@@ -1,7 +1,7 @@
 import Image from "next/image";
 export function JourneyPhotos() {
   return (
-    <section className="relative -mt-32 px-4 z-10 min-h-[930px] md:min-h-[1300px]">
+    <section className="relative -mt-32 px-4 z-10 min-h-[930px] md:min-h-[1370px]">
       <div className="max-w-6xl mx-auto relative">
         {/* 2020 Photo - overlapping with main circle on the left */}
         <div
@@ -26,7 +26,7 @@ export function JourneyPhotos() {
 
         {/* 2022 Photo - positioned on the right */}
         <div
-          className="absolute right-[-3%] top-[3rem] md:top-[-130px] md:right-[-20%] flex flex-col items-center space-y-2"
+          className="absolute right-[-3%] top-[1rem] md:top-[-130px] md:right-[-20%] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
@@ -48,6 +48,7 @@ export function JourneyPhotos() {
         {/* 2023 Photo - positioned bottom left */}
         <div
           className="absolute left-[-5%] bottom-[-23rem] md:left-[-25%] md:bottom-[-380px] flex flex-col items-center space-y-2"
+
           style={{
             position: "absolute",
             zIndex: 100,
@@ -69,6 +70,7 @@ export function JourneyPhotos() {
         {/* 2024 Photo - positioned bottom right */}
         <div
           className="absolute right-[0%] bottom-[-19rem] md:right-[-25%] md:bottom-[-330px] flex flex-col items-center space-y-2"
+
           style={{
             position: "absolute",
             zIndex: 100,
