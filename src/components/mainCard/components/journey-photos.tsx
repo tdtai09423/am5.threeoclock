@@ -47,7 +47,7 @@ export function JourneyPhotos() {
 
         {/* 2023 Photo - positioned bottom left */}
         <div
-          className="absolute left-[-5%] bottom-[-23rem] md:left-[-37%] md:bottom-[-380px] flex flex-col items-center space-y-2"
+          className="absolute left-[-5%] bottom-[-23rem] md:left-[-25%] md:bottom-[-480px] flex flex-col items-center space-y-2"
           style={{
             position: "absolute",
             zIndex: 100,
