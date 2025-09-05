@@ -1,7 +1,7 @@
 import Image from "next/image";
 export function JourneyPhotos() {
   return (
-    <section className="relative -mt-32 px-4 z-10 min-h-[930px] md:min-h-[1300px]">
+    <section className="relative -mt-32 px-4 z-10 min-h-[930px] md:min-h-[1370px]">
       <div className="max-w-6xl mx-auto relative">
         {/* 2020 Photo - overlapping with main circle on the left */}
         <div
