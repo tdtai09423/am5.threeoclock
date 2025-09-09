@@ -1,5 +1,9 @@
+"use client";
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export function JourneyPhotos() {
+  const { t } = useLanguage();
   return (
     <section className="relative -mt-32 px-4 z-10 min-h-[930px] md:min-h-[1300px]">
       <div className="max-w-6xl mx-auto relative">
@@ -90,25 +94,20 @@ export function JourneyPhotos() {
         <div className="relative top-[13rem] md:top-0 px-7 pt-0 md:pt-72 pb-28">
           {/* Tiêu đề */}
           <h3 className="font-futura text-lg md:text-5xl text-black font-futura-bold tracking-wide mb-0 md:mb-8 text-center">
-            HÀNH TRÌNH CỦA ẤM
+            {t('journey-title')}
           </h3>
 
           {/* Nội dung */}
           <div className="max-w-2xl mx-auto space-y-5">
-            <p className="text-md md:text-2xl text-black leading-relaxed font-futura-regular text-justify">
-              Từ những ngày đầu với ước mong mang một mùa Trung thu ấm áp đến
-              các em nhỏ có hoàn cảnh khó khăn, “Ấm” đã trở thành hành trình đặc
-              biệt mà <strong>THREE O&apos;CLOCK</strong> bền bỉ viết tiếp suốt
-              5 năm qua.
-            </p>
+            <p
+              className="text-md md:text-2xl text-black leading-relaxed font-futura-regular text-justify"
+              dangerouslySetInnerHTML={{ __html: t('journey-desc-1') }}
+            />
 
-            <p className="text-md md:text-2xl text-black leading-relaxed font-futura-regular text-justify">
-              Tiếp nối thành công từ những mùa trước, cùng sứ mệnh kết nối cộng
-              đồng, <strong>THREE O&apos;CLOCK</strong> tiếp tục phát động chiến
-              dịch ẤM 5 với mong muốn lan toả thông điệp ý nghĩa này đến thật
-              nhiều người hơn. Từ đó có thể góp thêm thật nhiều phần quà cho các
-              em nhỏ, mang đến một mùa trăng thật trọn vẹn.
-            </p>
+            <p
+              className="text-md md:text-2xl text-black leading-relaxed font-futura-regular text-justify"
+              dangerouslySetInnerHTML={{ __html: t('journey-desc-2') }}
+            />
           </div>
         </div>
       </div>

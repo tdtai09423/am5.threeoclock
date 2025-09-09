@@ -3,9 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageToggle from "@/components/LanguageToggle";
 
 export default function Header() {
   const pathname = usePathname();
+  const { t } = useLanguage();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
@@ -40,7 +43,7 @@ export default function Header() {
         <button
           onClick={handleToggleMobileMenu}
           className="md:hidden inline-flex items-center justify-center p-2 rounded"
-          aria-label="Mở menu"
+          aria-label={t('open-menu')}
           aria-expanded={isMobileMenuOpen}
         >
           <svg
@@ -70,7 +73,7 @@ export default function Header() {
                   : "hover:underline underline-offset-4"
               }`}
             >
-              TRANG CHỦ
+              {t('home')}
             </Link>
           </li>
 
@@ -84,7 +87,7 @@ export default function Header() {
                   : "hover:underline underline-offset-4"
               } flex items-center gap-1`}
             >
-              ĐẠI SỨ GOM TRĂNG
+{t('dai-su-gom-trang')}
               <svg
                 className={`w-4 h-4 transition-transform duration-200 ${
                   isDropdownOpen ? "rotate-180" : ""
@@ -112,7 +115,7 @@ export default function Header() {
                       className="block px-4 py-2 text-sm hover:underline underline-offset-4 transition-all"
                       onClick={handleCloseDropdown}
                     >
-                      ĐẠI SỨ ĐỒNG HÀNH
+                      {t('dai-su-dong-hanh')}
                     </Link>
                   </li>
                   <li>
@@ -121,7 +124,7 @@ export default function Header() {
                       className="block px-4 py-2 text-sm hover:underline underline-offset-4 transition-all"
                       onClick={handleCloseDropdown}
                     >
-                      80 ĐSTT
+                      {t('80-dstt')}
                     </Link>
                   </li>
                   {/* <li>
@@ -139,16 +142,19 @@ export default function Header() {
           </li>
         </ul>
 
-        {/* Logo bên phải */}
-        <Link href="/" className="flex items-center">
-          <Image
-            src="/img/logo.png"
-            alt="Logo"
-            width={110}
-            height={110}
-            priority
-          />
-        </Link>
+        {/* Logo và language toggle bên phải */}
+        <div className="flex items-center gap-4">
+          <LanguageToggle />
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/img/logo.png"
+              alt="Logo"
+              width={110}
+              height={110}
+              priority
+            />
+          </Link>
+        </div>
       </nav>
 
       {/* Mobile menu overlay */}
@@ -161,7 +167,8 @@ export default function Header() {
           />
           {/* sidebar panel: half screen width */}
           <div className="relative h-full w-2/3 bg-white px-4 py-6 flex flex-col">
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-between px-4">
+              <LanguageToggle />
               <Link
                 href="/"
                 className="flex items-center"
@@ -186,7 +193,7 @@ export default function Header() {
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  TRANG CHỦ
+                  {t('home')}
                 </Link>
               </li>
               <li>
@@ -196,7 +203,7 @@ export default function Header() {
                   className="w-full flex items-center justify-center gap-2 pt-2"
                   aria-expanded={isMobileDropdownOpen}
                 >
-                  <span>ĐẠI SỨ GOM TRĂNG</span>
+                  <span>{t('dai-su-gom-trang')}</span>
                   <svg
                     className={`w-4 h-4 transition-transform duration-200 ${
                       isMobileDropdownOpen ? "rotate-180" : ""
@@ -226,7 +233,7 @@ export default function Header() {
                       } text-base font-normal text-gray-600`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      ĐẠI SỨ ĐỒNG HÀNH
+                      {t('dai-su-dong-hanh')}
                     </Link>
                   </li>
                   <li>
@@ -239,7 +246,7 @@ export default function Header() {
                       } text-base font-normal text-gray-600`}
                       onClick={() => setIsMobileMenuOpen(false)}
                     >
-                      80 ĐSTT
+                      {t('80-dstt')}
                     </Link>
                   </li>
                   {/* <li>
