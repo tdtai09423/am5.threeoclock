@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function CooperateWith() {
+  const { t } = useLanguage();
   return (
     <>
       {/* ================= DESKTOP (>= md) ================= */}
@@ -9,14 +11,15 @@ export default function CooperateWith() {
         <div className="max-w-[80%] mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-8xl font-bold text-black mb-4 font-snell tracking-wide mb-[13rem]">
-              Chặng 2: Treo Trăng
-            </h2>
+            <h2
+              className="text-4xl md:text-8xl font-bold text-black mb-4 font-snell tracking-wide mb-[13rem]"
+              dangerouslySetInnerHTML={{ __html: t('chapter-2') }}
+            />
             <h2 className="text-4xl md:text-4xl font-bold text-black font-futura-bold tracking-wide">
-              HÀNH TRÌNH LAN TỎA YÊU
+              {t('cooperate-title-1')}
             </h2>
             <h2 className="text-4xl md:text-4xl font-bold text-black font-futura-bold tracking-wide mb-4">
-              THƯƠNG CÙNG ĐẠI SỨ
+              {t('cooperate-title-2')}
             </h2>
             <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto" />
           </div>
@@ -35,23 +38,19 @@ export default function CooperateWith() {
                 />
               </div>
               <div className="w-full text-center font-futura-bold text-4xl text-black mt-2">
-                DIỄN VIÊN CHÍ TÂM
+                {t('actor-name')}
               </div>
             </div>
 
             {/* Right - Text */}
             <div className="space-y-8">
               <p className="font-futura-regular text-justify text-xl text-black leading-relaxed">
-                Sự hiện diện của Đại sứ không chỉ mang đến làn gió mới cho chiến
-                dịch, mà còn là cầu nối giúp lan tỏa mạnh mẽ thông điệp: Một ly
-                trà thơm, thêm mùa trăng Ấm.
+                {t('cooperate-desc-1')}
               </p>
-              <p className="font-futura-regular text-justify text-xl text-black leading-relaxed">
-                Cùng <strong>THREE O&apos;CLOCK</strong>, Đại sứ sẽ trực tiếp
-                tham gia các hoạt động thiện nguyện, đồng hành trong hành trình
-                trao gửi những phần quà Trung thu đến các em nhỏ và kể lại những
-                câu chuyện phía sau mỗi chiếc bánh được trao đi.
-              </p>
+              <p
+                className="font-futura-regular text-justify text-xl text-black leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: t('cooperate-desc-2') }}
+              />
             </div>
           </div>
 
@@ -75,14 +74,15 @@ export default function CooperateWith() {
         <div className="max-w-[100%] mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-black mb-8 font-snell tracking-wide">
-              Chặng 2: Treo Trăng
-            </h2>
+            <h2
+              className="text-4xl font-bold text-black mb-8 font-snell tracking-wide"
+              dangerouslySetInnerHTML={{ __html: t('chapter-2') }}
+            />
             <h2 className="text-md font-bold text-black font-futura-bold tracking-wide">
-              HÀNH TRÌNH LAN TỎA YÊU THƯƠNG
+              {t('cooperate-title-1')}
             </h2>
             <h2 className="text-md font-bold text-black font-futura-bold tracking-wide mb-2">
-              CÙNG ĐẠI SỨ
+              {t('cooperate-title-2')}
             </h2>
             <div className="w-80 h-0.5 bg-gray-600 mx-auto" />
           </div>
@@ -101,23 +101,19 @@ export default function CooperateWith() {
                 />
               </div>
               <div className="w-full text-center font-futura-bold text-3xl text-black mt-2">
-                DIỄN VIÊN CHÍ TÂM
+                {t('actor-name')}
               </div>
             </div>
 
             {/* Text */}
             <div className="space-y-5 pt-6">
               <p className="font-futura-regular text-justify text-md text-black leading-relaxed">
-                Sự hiện diện của Đại sứ không chỉ mang đến làn gió mới cho chiến
-                dịch, mà còn là cầu nối giúp lan tỏa mạnh mẽ thông điệp: Một ly
-                trà thơm, thêm mùa trăng Ấm.
+                {t('cooperate-desc-1')}
               </p>
-              <p className="font-futura-regular text-justify text-md text-black leading-relaxed">
-                Cùng <strong>THREE O&apos;CLOCK</strong>, Đại sứ sẽ trực tiếp
-                tham gia các hoạt động thiện nguyện, đồng hành trong hành trình
-                trao gửi những phần quà Trung thu đến các em nhỏ và kể lại những
-                câu chuyện phía sau mỗi chiếc bánh được trao đi.
-              </p>
+              <p
+                className="font-futura-regular text-justify text-md text-black leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: t('cooperate-desc-2') }}
+              />
             </div>
           </div>
 

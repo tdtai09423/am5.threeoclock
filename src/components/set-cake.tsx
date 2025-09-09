@@ -1,13 +1,16 @@
+"use client";
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function SetCake() {
+  const { t } = useLanguage();
   return (
     <section className="relative px-4 md:px-6 md:py-20 lg:px-8">
       {/* Desktop */}
       <div className="hidden md:block max-w-[90%] mx-auto">
         <div className="text-center mb-14">
           <h2 className="text-lg md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
-            BÁNH TRUNG THU “VỊ TRĂNG”
+            {t('set-cake-title')}
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto" />
         </div>
@@ -27,10 +30,7 @@ export function SetCake() {
 
           <div className="max-w-[65%] mx-auto">
             <p className="text-center text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
-              Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
-              mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười
-              được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn
-              yêu thương cho các em.
+              {t('set-cake-desc-1')}
             </p>
           </div>
 
@@ -45,17 +45,11 @@ export function SetCake() {
             />
           </div>
 
-          <div className="max-w-[65%]">
+          {/* <div className="max-w-[65%]">
             <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
-              Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại
-              tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi
-              khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em
-              nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua.
-              Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm
-              lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa
-              trăng hy vọng.
+              {t('set-cake-desc-2')}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
 
@@ -65,7 +59,7 @@ export function SetCake() {
       <div className="relative block md:hidden max-w-[90%] mx-auto top-[-2rem]">
         <div className="text-center mb-14">
           <h2 className="text-lg md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-2">
-            BÁNH TRUNG THU “VỊ TRĂNG”
+            {t('set-cake-title')}
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto" />
         </div>
@@ -84,10 +78,7 @@ export function SetCake() {
 
           <div className="max-w-[95%] mx-auto">
             <p className="text-center text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
-              Trong hành trình “Ấm 5”, ánh trăng trở thành điểm hẹn chung của
-              mọi tấm lòng, nơi từng ly trà, từng miếng bánh và những tiếng cười
-              được góp nhặt, hòa quyện để tạo nên một mùa trăng đủ đầy, trọn vẹn
-              yêu thương cho các em.
+              {t('set-cake-desc-1')}
             </p>
           </div>
 
@@ -102,17 +93,11 @@ export function SetCake() {
             />
           </div>
 
-          <div className="max-w-[95%]">
+          {/* <div className="max-w-[95%]">
             <p className="text-justify text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
-              Với ước mong cho các em có một mùa Trăng tròn đầy và ý nghĩa, tại
-              tất cả các cửa hàng, sẽ được bố trí một góc check-in nho nhỏ, nơi
-              khách hàng có thể dừng lại chụp ảnh, viết điều ước gửi đến các em
-              nhỏ, và cùng nhau nhìn lại hành trình của những mùa Ấm đã qua.
-              Không chỉ là một điểm dừng chân, đây còn là nơi kết nối những tấm
-              lòng, để mỗi điều ước viết ra đều góp phần thắp sáng thêm một mùa
-              trăng hy vọng.
+              {t('set-cake-desc-2')}
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

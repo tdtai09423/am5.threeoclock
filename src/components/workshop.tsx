@@ -1,6 +1,9 @@
+"use client";
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Workshop() {
+  const { t } = useLanguage();
   return (
     <section className="relative px-4 md:px-6 lg:px-8">
       {/* =================== DESKTOP (>= md) =================== */}
@@ -8,20 +11,14 @@ export function Workshop() {
         {/* Title */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
-            WORKSHOP: THẮP SÁNG TRĂNG RẰM
+            {t('workshop-title')}
           </h2>
           <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto" />
         </div>
 
         {/* Content */}
         <div className="w-full flex flex-col items-center justify-center gap-6">
-          <div className="max-w-[57%]">
-            <p className="text-justify text-xl md:text-2xl leading-relaxed font-futura-regular text-black">
-              Team 3H sẽ tổ chức Workshop “Thắp Sáng Trăng Rằm” làm 300 chiếc
-              lồng đèn để tặng cho trẻ nhỏ tại Bệnh viện Nhi Đồng 1 TP.HCM vào
-              “Đêm Hội Trăng Rằm” ngày 2/10/2025
-            </p>
-          </div>
+          
 
           {/* === Image grid (to bự ra) === */}
           <div className="w-full grid grid-cols-2 gap-6 mt-10">
@@ -59,20 +56,13 @@ export function Workshop() {
       {/* =================== MOBILE (< md) =================== */}
       <div className="relative block md:hidden max-w-[90%] mx-auto top-[-2rem]">
         <div className="text-center mb-14">
-          <h2 className="text-3xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
-            WORKSHOP: THẮP SÁNG TRĂNG RẰM
+          <h2 className="text-xl font-extrabold text-black font-futura-bold tracking-wide mb-3">
+            {t('workshop-title')}
           </h2>
           <div className="w-48 h-0.5 bg-gray-600 mx-auto" />
         </div>
 
         <div className="w-full flex flex-col items-center justify-center gap-6">
-          <div className="max-w-[90%]">
-            <p className="text-justify text-md leading-relaxed font-futura-regular text-black">
-              Team 3H sẽ tổ chức Workshop “Thắp Sáng Trăng Rằm” làm 300 chiếc
-              lồng đèn để tặng cho trẻ nhỏ tại Bệnh viện Nhi Đồng 1 TP.HCM vào
-              “Đêm Hội Trăng Rằm” ngày 2/10/2025
-            </p>
-          </div>
 
           {/* === Image grid (to bự ra) === */}
           <div className="w-full grid grid-cols-2 gap-6 mt-10 mb-8">

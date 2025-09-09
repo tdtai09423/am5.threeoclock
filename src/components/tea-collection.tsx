@@ -1,12 +1,16 @@
+"use client";
 import Image from "next/image";
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export function TeaCollection() {
+  const { t } = useLanguage();
   return (
     <>
       <section className="hidden md:block py-16 px-4 relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-4xl font-bold text-gray-800 mb-4 font-futura-bold tracking-wide">
-              BỘ SƯU TẬP MỚI: TRÀ TRÔNG TRĂNG
+              {t('tea-collection-title')}
             </h2>
             <div className="w-48 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto"></div>
           </div>
@@ -55,7 +59,7 @@ export function TeaCollection() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-0">
             <h2 className="text-md md:text-4xl font-bold text-gray-800 mb-2 font-futura-bold tracking-wide">
-              BỘ SƯU TẬP MỚI: TRÀ TRÔNG TRĂNG
+              {t('tea-collection-title')}
             </h2>
             <div className="w-85 md:w-100 lg:w-300 h-0.5 bg-gray-600 mx-auto mb-20"></div>
           </div>
