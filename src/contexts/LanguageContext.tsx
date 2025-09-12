@@ -78,20 +78,20 @@ const translations = {
     'chapter-1': 'Chapter 1:<br>Collecting the Moon',
     'event-title-1': 'EVENT TO COLLECT INGREDIENT STAMPS',
     'event-title-2': 'TO RECEIVE MOONCAKES',
-    'event-description': 'From September 5 - September 30, 2025, each drink during this year\'s Mid-Autumn season will come with one scratch card containing a mooncake ingredient, including: flour, sugar, egg, mung bean, taro/lotus seed. After collecting 5 cards, you can redeem a unique <strong>THREE O\'CLOCK</strong> mooncake to share or choose to donate it to the child patients at Nhi Dong 1 Hospital in Ho Chi Minh City during the "Full Moon Festival" this year\'s "Ấm" season.',
+    'event-description': 'From September 5 - September 30, 2025, each drink during this year\'s Mid-Autumn season will come with one scratch card containing a mooncake ingredient, including: flour, sugar, egg, mung bean, taro/lotus seed. After collecting 5 cards, you can redeem a unique <strong>THREE O\'CLOCK</strong> mooncake to share or choose to donate it to the child patients at Nhi Dong 1 Hospital in Ho Chi Minh City during the "Full Moon Festival" this year\'s "WARTH" season.',
 
     // Journey Section
-    'journey-title': 'THE JOURNEY OF ẤM',
-    'journey-desc-1': '"Ấm" is a special journey that <strong>THREE O\'CLOCK</strong> has persistently continued for the past 5 years.',
-    'journey-desc-2': 'For the Mid-Autumn Festival 2025, <strong>Ấm 5</strong> is accompanied by Nhi Dong 1 Hospital in Ho Chi Minh City to raise a fund for gifting more than 300 pediatric patients who are fighting their illnesses every day. Under the Ấm 5 moonlight, each Mid-Autumn gift will be delivered directly to the children, sending along customers\' wishes for a complete moon season to them.',
+    'journey-title': 'THE JOURNEY OF WARTH',
+    'journey-desc-1': '"WARTH" is a special journey that <strong>THREE O\'CLOCK</strong> has persistently continued for the past 5 years.',
+    'journey-desc-2': 'For the Mid-Autumn Festival 2025, <strong>WARTH 5</strong> is accompanied by Nhi Dong 1 Hospital in Ho Chi Minh City to raise a fund for gifting more than 300 pediatric patients who are fighting their illnesses every day. Under the WARTH 5 moonlight, each Mid-Autumn gift will be delivered directly to the children, sending along customers\' wishes for a complete moon season to them.',
 
     // Tea Collection Section
     'tea-collection-title': 'THE COLLECTION: TRÀ TRÔNG TRĂNG',
 
     // Set Cake Section
     'set-cake-title': 'MOONCAKE SET "TASTE OF THE MOON"',
-    'set-cake-desc-1': 'On the "Ấm 5" journey, the moonlight becomes a shared meeting point for everyone, where each cup of tea, each piece of cake, and every laugh is collected and blended to create a Mid-Autumn season full of complete and heartfelt love for the children.',
-    'set-cake-desc-2': 'With the wish for the children to have a full and meaningful Mid-Autumn season, at all stores, a small check-in corner will be set up where customers can stop to take photos, write wishes for the children, and look back together at the journey of past Ấm seasons. Not just a resting place, this is also a place to connect hearts, so that every wish written contributes to lighting up another season of hopeful moon.',
+    'set-cake-desc-1': 'On the "WARTH 5" journey, the moonlight becomes a shared meeting point for everyone, where each cup of tea, each piece of cake, and every laugh is collected and blended to create a Mid-Autumn season full of complete and heartfelt love for the children.',
+    'set-cake-desc-2': 'With the wish for the children to have a full and meaningful Mid-Autumn season, at all stores, a small check-in corner will be set up where customers can stop to take photos, write wishes for the children, and look back together at the journey of past WARTH seasons. Not just a resting place, this is also a place to connect hearts, so that every wish written contributes to lighting up another season of hopeful moon.',
 
     // Cooperate With Section
     'chapter-2': 'Chapter 2:<br>Hanging the Moon',
@@ -109,8 +109,8 @@ const translations = {
     'stage3-desc': 'On October 2, 2025, during the Mid-Autumn Festival: <strong>"The Moon Season Story"</strong> will be held at Nhi Dong 1 Hospital in Ho Chi Minh City to present 300 gifts and 50,000,000 VND to 10 disadvantaged children.',
 
     // Info Card Section
-    'info-desc-1': '<strong>THREE O\'CLOCK</strong> believes that by simply sharing this message, you are making a significant contribution to spreading this meaningful activity to others, so that <strong>QUỸ ẤM 5</strong> can gain more strength to help many more children.',
-    'info-desc-2': 'Let\'s join hands with <strong>THREE O\'CLOCK</strong> to bring a joyful and warm Mid-Autumn season to the children who are undergoing treatment affected by their illnesses at Nhi Dong 1 Hospital during this year\'s "Ấm" moon season!',
+    'info-desc-1': '<strong>THREE O\'CLOCK</strong> believes that by simply sharing this message, you are making a significant contribution to spreading this meaningful activity to others, so that <strong>WARMTH FUND 5</strong> can gain more strength to help many more children.',
+    'info-desc-2': 'Let\'s join hands with <strong>THREE O\'CLOCK</strong> to bring a joyful and warm Mid-Autumn season to the children who are undergoing treatment affected by their illnesses at Nhi Dong 1 Hospital during this year\'s "WARTH" moon season!',
 
     // Common
     'language': 'Language',
