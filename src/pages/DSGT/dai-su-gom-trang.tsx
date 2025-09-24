@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 
 const dsttCollections = [
   {
@@ -67,7 +67,7 @@ const dsttCollections = [
       "/dstt3/77915fe404b18d06d62486c6d8bbaea669eedf8e.png",
       "/dstt3/8478a9ee56e2433c97e8b7afc39ceb6253b1a1cf.jpg",
       "/dstt3/8a22a6ef5e361f96676b47c32dfc03e71de5915e.jpg",
-      "/dstt3/8cbfecd87cf73d7e97e3101f8f5543b74388d210.jpg",
+      "/dstt2/8cbfecd87cf73d7e97e3101f8f5543b74388d210.jpg",
       "/dstt2/9f1251e9b675e222b8cb6e49b84ac7957419ce21.jpg",
       "/dstt3/a23dbca129deeedd36b7ed9eff1d40dd5f0765a4.jpg",
       "/dstt3/b06057d064e1d72f2bb222b772f0d19d175a0a00.jpg",
@@ -86,10 +86,14 @@ export default function DSGTPage() {
     { src: "/img/dai-su-item-1.svg", alt: "Đại sứ 1" },
     { src: "/img/dai-su-item-2.svg", alt: "Đại sứ 2" },
     { src: "/img/dai-su-item-3.svg", alt: "Đại sứ 3" },
+    { src: "/img/dai-su-item-4.svg", alt: "Đại sứ 4" },
+    { src: "/img/dai-su-item-5.svg", alt: "Đại sứ 5" },
+    { src: "/img/dai-su-item-6.svg", alt: "Đại sứ 6" },
   ];
 
   const [idx, setIdx] = useState(0);
   const [dsttPage, setDsttPage] = useState(0);
+  const [desktopGroupIdx, setDesktopGroupIdx] = useState(0);
   const trackRef = useRef<HTMLDivElement>(null);
   const slideRefs = useRef<HTMLDivElement[]>([]);
   const currentDsttGroup = dsttCollections[dsttPage] ?? dsttCollections[0];
@@ -144,6 +148,28 @@ export default function DSGTPage() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [idx]);
 
+  const desktopGroups = useMemo(() => {
+    const half = Math.ceil(items.length / 2);
+    const first = items.slice(0, half);
+    const second = items.slice(half);
+    if (!second.length) {
+      return [first];
+    }
+    return [first, second];
+  }, [items]);
+
+  useEffect(() => {
+    if (desktopGroupIdx >= desktopGroups.length) {
+      setDesktopGroupIdx(0);
+    }
+  }, [desktopGroupIdx, desktopGroups.length]);
+
+  const changeDesktopGroup = (step: number) => {
+    const total = desktopGroups.length;
+    if (total <= 1) return;
+    setDesktopGroupIdx((prev) => (prev + step + total) % total);
+  };
+
   return (
     <div className="w-full p-0 flex flex-col items-center overflow-x-hidden bg-[url('/img/dsgt-bg.svg')] bg-top bg-no-repeat bg-[length:100%_auto]">
       {/* ===================== TOP SECTION ===================== */}
@@ -177,18 +203,55 @@ export default function DSGTPage() {
       </div>
 
       {/* ===================== BOTTOM SECTION — DESKTOP ===================== */}
-      <div className="hidden md:grid grid-cols-3 gap-10 w-[95%] max-w-6xl mx-auto h-auto mb-10">
-        {items.map((it) => (
-          <div key={it.src} className="relative w-full aspect-[2/3]">
-            <Image
-              src={it.src}
-              alt={it.alt}
-              fill
-              className="object-contain object-center"
-              sizes="(min-width: 768px) 33vw"
-            />
+      <div className="hidden md:flex flex-col items-center w-[95%] max-w-6xl mx-auto h-auto mb-10">
+        <div className="relative w-full overflow-hidden">
+          <div className="flex w-full transition-transform duration-500 ease-out" style={{ transform: `translateX(-${desktopGroupIdx * 100}%)` }}>
+            {desktopGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className="grid grid-cols-3 gap-10 w-full flex-shrink-0">
+                {group.map((it) => (
+                  <div key={it.src} className="relative w-full aspect-[2/3]">
+                    <Image
+                      src={it.src}
+                      alt={it.alt}
+                      fill
+                      className="object-contain object-center"
+                      sizes="(min-width: 1024px) 25vw"
+                    />
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
+
+        <div className="mt-6 flex items-center gap-6">
+          <button
+            type="button"
+            onClick={() => changeDesktopGroup(-1)}
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-black/30 text-black/70 hover:bg-black/5 transition"
+            aria-label="Xem bộ trước"
+          >
+            ‹
+          </button>
+          <div className="flex gap-2">
+            {desktopGroups.map((_, index) => (
+              <span
+                key={index}
+                className={`h-2.5 w-6 rounded-full transition-all duration-300 ${
+                  index === desktopGroupIdx ? "bg-black" : "bg-black/20"
+                }`}
+              />
+            ))}
+          </div>
+          <button
+            type="button"
+            onClick={() => changeDesktopGroup(1)}
+            className="w-10 h-10 flex items-center justify-center rounded-full border border-black/30 text-black/70 hover:bg-black/5 transition"
+            aria-label="Xem bộ tiếp theo"
+          >
+            ›
+          </button>
+        </div>
       </div>
 
       {/* ===================== BOTTOM SECTION — MOBILE SLIDER ===================== */}
@@ -243,7 +306,7 @@ export default function DSGTPage() {
 
         {/* dots */}
         <div className="absolute left-1/2 -translate-x-1/2 bottom-2 flex gap-2">
-          {[0, 1, 2].map((i) => (
+          {items.map((_, i) => (
             <button
               key={i}
               aria-label={`Đi tới slide ${i + 1}`}
@@ -269,16 +332,16 @@ export default function DSGTPage() {
             </span>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-10 gap-y-12">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-x-4 sm:gap-x-6 lg:gap-x-10 gap-y-8 sm:gap-y-10">
             {currentDsttGroup.images.map((src, index) => (
               <div key={`${currentDsttGroup.id}-${index}`} className="flex flex-col items-center gap-4 text-black">
-                <div className="relative w-64 h-64 md:w-64 md:h-64">
+                <div className="relative w-40 h-40 sm:w-52 sm:h-52 lg:w-64 lg:h-64">
                   <Image
                     src={src}
                     alt={`${currentDsttGroup.id} member ${index + 1}`}
                     fill
                     className="rounded-full object-cover"
-                    sizes="(min-width: 1024px) 18vw, (min-width: 768px) 25vw, 45vw"
+                    sizes="(min-width: 1024px) 18vw, (min-width: 640px) 30vw, 45vw"
                   />
                 </div>
 
