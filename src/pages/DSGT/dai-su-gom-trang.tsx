@@ -155,12 +155,12 @@ const ambassadors = [
     imageSrc: "/dsttcard/Nguyễn Duy Phương.jpg",
     socialHref: "https://www.facebook.com/share/p/17EEp2k8fF/"
   },
-  {
-    name: "Đoàn Nga Phương anh",
-    description: "Chiến dịch không chỉ đơn thuần là trao quà, mà còn là hành trình kết nối trái tim, lan tỏa tinh thần nhân văn đến cộng đồng. Mình tin rằng, mỗi hành động nhỏ hôm nay sẽ góp phần thắp sáng niềm tin và hy vọng cho ngày mai của các em.",
-    imageSrc: "/dsttcard/Đoàn Nga Phương anh.jpg",
-    socialHref: "https://www.facebook.com/share/p/19T8NkeUvb/?mibextid=wwXIfr"
-  },
+  // {
+  //   name: "Đoàn Nga Phương anh",
+  //   description: "Chiến dịch không chỉ đơn thuần là trao quà, mà còn là hành trình kết nối trái tim, lan tỏa tinh thần nhân văn đến cộng đồng. Mình tin rằng, mỗi hành động nhỏ hôm nay sẽ góp phần thắp sáng niềm tin và hy vọng cho ngày mai của các em.",
+  //   imageSrc: "/dsttcard/Đoàn Nga Phương anh.jpg",
+  //   socialHref: "https://www.facebook.com/share/p/19T8NkeUvb/?mibextid=wwXIfr"
+  // },
   // {
   //   name: "Nguyễn Hoàng Kiều Diễm",
   //   description: "Trung thu với nhiều người là sum vầy, là ánh đèn lấp lánh và tiếng cười giòn tan bên gia đình. Nhưng đâu đó vẫn có những em nhỏ phải đón trăng trong phòng bệnh, lặng lẽ và thiếu vắng niềm vui tuổi thơ.",
