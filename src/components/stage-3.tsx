@@ -8,10 +8,7 @@ export function Stage3() {
   return (
     <section className="relative px-4 md:px-6 lg:px-8 md:mb-10 md:mt-30">
       {/* Decorative stars */}
-      {/* <div className="absolute top-8 left-12 text-amber-300 text-sm">✦</div>
-      <div className="absolute top-20 right-16 text-amber-400 text-xs">✦</div>
-      <div className="absolute bottom-12 left-20 text-amber-300 text-xs">✦</div>
-      <div className="absolute bottom-8 right-12 text-amber-400 text-sm">✦</div> */}
+      {/* Hung sv hung sv hung sv hung sv hung sv hung sv hung sv.  hung sv hung shung sv hung sv. hung sv hung sv. hung sv hung sv. hung sv hung sv. hung sv hung sv hung sv hung sv */}
 
       <div className="hidden md:block max-w-[90%] mx-auto">
         {/* Desktop version */}
