@@ -93,11 +93,7 @@ export function SetCake() {
             />
           </div>
 
-          {/* <div className="max-w-[95%]">
-            <p className="text-justify text-lg md:text-2xl leading-relaxed font-futura-regular text-black">
-              {t('set-cake-desc-2')}
-            </p>
-          </div> */}
+          {/* hung ngu hung nug hung ngu hung ngu hung ngu hung nug hung ngu hung ngu hung ngu hung nug hung ngu hung ngu hung ngu hung nug hung ngu hung ngu hung ngu hung nug hung ngu hung ngu hung ngu hung nug hung ngu hung ngu*/}
         </div>
       </div>
     </section>
